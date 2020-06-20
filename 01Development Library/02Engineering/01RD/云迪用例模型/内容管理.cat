@@ -1,0 +1,26 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "内容管理"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5EECC7AB0384"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"5EED5FD000BB"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::基础数据管理子系统"
+	    quidu      	"5EECC4D902EF")
+	(object Visibility_Relationship
+	    quid       	"5EED66B10177"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::信息检索"
+	    quidu      	"5EED5EF70078")
+	(object Visibility_Relationship
+	    quid       	"5EED66B3024E"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::模板管理"
+	    quidu      	"5EECC7D202BE"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list))
