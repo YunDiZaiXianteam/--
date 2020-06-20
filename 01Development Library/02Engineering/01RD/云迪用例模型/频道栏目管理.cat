@@ -11,7 +11,7 @@
     visible_categories 	(list visibility_relationship_list
 	(object Visibility_Relationship
 	    quid       	"5EED5FE80365"
-	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统"
 	    quidu      	"5EECC7AB0384")
 	(object Visibility_Relationship
 	    quid       	"5EED636E0026"
@@ -30,7 +30,12 @@
 	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::信息检索"
 	    quidu      	"5EED5EF70078"))
     exportControl 	"Public"
-    logical_models 	(list unit_reference_list)
+    logical_models 	(list unit_reference_list
+	(object Class_Category "频道"
+	    quid       	"5EEDB79C00F5"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list)))
     logical_presentations 	(list unit_reference_list
 	(object UseCaseDiagram "Main"
 	    quid       	"5EED739B024B"

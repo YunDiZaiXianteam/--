@@ -11,7 +11,7 @@
     visible_categories 	(list visibility_relationship_list
 	(object Visibility_Relationship
 	    quid       	"5EED60D5016D"
-	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::频道栏目管理"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
 	    quidu      	"5EECC7B30298")
 	(object Visibility_Relationship
 	    quid       	"5EED60EC00C0"

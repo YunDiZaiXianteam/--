@@ -11,16 +11,24 @@
     visible_categories 	(list visibility_relationship_list
 	(object Visibility_Relationship
 	    quid       	"5EED64F90117"
-	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统"
 	    quidu      	"5EECC7AB0384")
 	(object Visibility_Relationship
 	    quid       	"5EED6649029A"
-	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::信息检索"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::信息检索"
 	    quidu      	"5EED5EF70078")
 	(object Visibility_Relationship
 	    quid       	"5EED667F01C2"
-	    supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::模板管理"
-	    quidu      	"5EECC7D202BE"))
+	    supplier   	"Use Case View::Use Case Model::Use Cases::模板管理"
+	    quidu      	"5EECC7D202BE")
+	(object Visibility_Relationship
+	    quid       	"5EED7A240137"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::系统管理"
+	    quidu      	"5EED79FC0296")
+	(object Visibility_Relationship
+	    quid       	"5EEDB89F03CE"
+	    supplier   	"Use Case View::Use Case Model::Use Cases::资源管理子系统"
+	    quidu      	"5EECC56601C5"))
     exportControl 	"Public"
     logical_models 	(list unit_reference_list)
     logical_presentations 	(list unit_reference_list))
