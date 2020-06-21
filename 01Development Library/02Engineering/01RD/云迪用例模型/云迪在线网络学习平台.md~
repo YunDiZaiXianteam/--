@@ -699,875 +699,455 @@
 					line_style 	0)))))
 		    (object Class_Category "Use Cases"
 			quid       	"5EECC4C403DD"
+			visible_categories 	(list visibility_relationship_list
+			    (object Visibility_Relationship
+				quid       	"5EEDBAB40298"
+				supplier   	"Use Case View::Use Case Model::Actor"
+				quidu      	"5EECC43D0304"))
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-			    (object Class_Category "云迪在线网络学习平台"
-				quid       	"5EECC4CF0079"
+			    (object Class_Category "测评考试子系统"
+				quid       	"5EECC55702C6"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED603C0161"
+					supplier   	"Use Case View::Use Case Model::Use Cases::模板管理"
+					quidu      	"5EECC7D202BE")
+				    (object Visibility_Relationship
+					quid       	"5EED6AD00091"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298"))
 				exportControl 	"Public"
-				logical_models 	(list unit_reference_list
-				    (object Class_Category "基础数据管理子系统"
-					is_unit    	TRUE
-					is_loaded  	FALSE
-					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\基础数据管理.cat"
-					quid       	"5EECC4D902EF")
-				    (object Class_Category "公开课管理子系统"
-					is_unit    	TRUE
-					is_loaded  	FALSE
-					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\公开课管理.cat"
-					quid       	"5EECC4FE0033")
-				    (object Class_Category "实训实习管理子系统"
-					quid       	"5EECC50701C2"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED68340088"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298")
-					    (object Visibility_Relationship
-						quid       	"5EED714701A2"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::课程学习功能子系统"
-						quidu      	"5EECC54D004C")
-					    (object Visibility_Relationship
-						quid       	"5EED723C008B"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::公开课管理子系统"
-						quidu      	"5EECC4FE0033"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "就业培训管理子系统"
-					quid       	"5EECC52A01ED"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED68400255"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298")
-					    (object Visibility_Relationship
-						quid       	"5EED71130119"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::课程学习功能子系统"
-						quidu      	"5EECC54D004C")
-					    (object Visibility_Relationship
-						quid       	"5EED723E00B9"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::公开课管理子系统"
-						quidu      	"5EECC4FE0033"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "创新创业管理子系统"
-					quid       	"5EECC53B03B4"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED68390041"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298")
-					    (object Visibility_Relationship
-						quid       	"5EED712F023A"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::课程学习功能子系统"
-						quidu      	"5EECC54D004C")
-					    (object Visibility_Relationship
-						quid       	"5EED72400257"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::公开课管理子系统"
-						quidu      	"5EECC4FE0033"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "课程学习功能子系统"
-					quid       	"5EECC54D004C"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED687E0005"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298")
-					    (object Visibility_Relationship
-						quid       	"5EED702B010A"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::公开课管理子系统"
-						quidu      	"5EECC4FE0033")
-					    (object Visibility_Relationship
-						quid       	"5EED70C900A2"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::资源管理子系统"
-						quidu      	"5EECC56601C5"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "测评考试子系统"
-					quid       	"5EECC55702C6"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED603C0161"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::模板管理"
-						quidu      	"5EECC7D202BE")
-					    (object Visibility_Relationship
-						quid       	"5EED6AD00091"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "资源管理子系统"
-					is_unit    	TRUE
-					is_loaded  	FALSE
-					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
-					quid       	"5EECC56601C5")
-				    (object Class_Category "知识管理子系统"
-					is_unit    	TRUE
-					is_loaded  	FALSE
-					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\知识管理子系统.cat"
-					quid       	"5EECC56F00F7")
-				    (object Class_Category "教学管理子系统"
-					quid       	"5EECC7A20163"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED682C0088"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "内容管理子系统"
-					quid       	"5EECC7AB0384"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED5FD000BB"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::基础数据管理子系统"
-						quidu      	"5EECC4D902EF")
-					    (object Visibility_Relationship
-						quid       	"5EED66B10177"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::信息检索"
-						quidu      	"5EED5EF70078")
-					    (object Visibility_Relationship
-						quid       	"5EED66B3024E"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::模板管理"
-						quidu      	"5EECC7D202BE"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list
-					    (object Class_Category "频道栏目管理"
-						is_unit    	TRUE
-						is_loaded  	FALSE
-						file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\频道栏目管理.cat"
-						quid       	"5EECC7B30298")
-					    (object Class_Category "NewPackage"
-						quid       	"5EEDB70E0084"
-						exportControl 	"Public"
-						logical_models 	(list unit_reference_list)
-						logical_presentations 	(list unit_reference_list))
-					    (object Class_Category "内容管理"
-						is_unit    	TRUE
-						is_loaded  	FALSE
-						file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\内容管理.cat"
-						quid       	"5EEDB7210388")
-					    (object Class_Category "内容编辑"
-						quid       	"5EEDB728021C"
-						exportControl 	"Public"
-						logical_models 	(list unit_reference_list)
-						logical_presentations 	(list unit_reference_list)))
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "互动交流"
-					quid       	"5EECC7C00266"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED6084010E"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298")
-					    (object Visibility_Relationship
-						quid       	"5EED62D20331"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::模板管理"
-						quidu      	"5EECC7D202BE"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "统计分析子系统"
-					quid       	"5EECC7C90052"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED689F010B"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "模板管理"
-					quid       	"5EECC7D202BE"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED60340157"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统"
-						quidu      	"5EECC7AB0384")
-					    (object Visibility_Relationship
-						quid       	"5EED6139012E"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298")
-					    (object Visibility_Relationship
-						quid       	"5EED76BD0253"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::信息检索"
-						quidu      	"5EED5EF70078"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list
-					    (object UseCaseDiagram "Main"
-						quid       	"5EED649C0085"
-						title      	"Main"
-						zoom       	100
-						max_height 	28350
-						max_width  	21600
-						origin_x   	0
-						origin_y   	0
-						items      	(list diagram_item_list))))
-				    (object Class_Category "信息检索"
-					quid       	"5EED5EF70078"
-					visible_categories 	(list visibility_relationship_list
-					    (object Visibility_Relationship
-						quid       	"5EED5F69017A"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::基础数据管理子系统"
-						quidu      	"5EECC4D902EF")
-					    (object Visibility_Relationship
-						quid       	"5EED6198001E"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理"
-						quidu      	"5EECC7B30298")
-					    (object Visibility_Relationship
-						quid       	"5EED627C034C"
-						supplier   	"Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统"
-						quidu      	"5EECC7AB0384"))
-					exportControl 	"Public"
-					logical_models 	(list unit_reference_list)
-					logical_presentations 	(list unit_reference_list))
-				    (object Class_Category "系统管理"
-					is_unit    	TRUE
-					is_loaded  	FALSE
-					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\系统管理.cat"
-					quid       	"5EED79FC0296"))
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "创新创业管理子系统"
+				quid       	"5EECC53B03B4"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED68390041"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298")
+				    (object Visibility_Relationship
+					quid       	"5EED712F023A"
+					supplier   	"Use Case View::Use Case Model::Use Cases::课程学习功能子系统"
+					quidu      	"5EECC54D004C")
+				    (object Visibility_Relationship
+					quid       	"5EED72400257"
+					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
+					quidu      	"5EECC4FE0033"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "公开课管理子系统"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\公开课管理.cat"
+				quid       	"5EECC4FE0033")
+			    (object Class_Category "互动交流"
+				quid       	"5EECC7C00266"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED6084010E"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298")
+				    (object Visibility_Relationship
+					quid       	"5EED62D20331"
+					supplier   	"Use Case View::Use Case Model::Use Cases::模板管理"
+					quidu      	"5EECC7D202BE"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "基础数据管理子系统"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\基础数据管理.cat"
+				quid       	"5EECC4D902EF")
+			    (object Class_Category "教学管理子系统"
+				quid       	"5EECC7A20163"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED682C0088"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "就业培训管理子系统"
+				quid       	"5EECC52A01ED"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED68400255"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298")
+				    (object Visibility_Relationship
+					quid       	"5EED71130119"
+					supplier   	"Use Case View::Use Case Model::Use Cases::课程学习功能子系统"
+					quidu      	"5EECC54D004C")
+				    (object Visibility_Relationship
+					quid       	"5EED723E00B9"
+					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
+					quidu      	"5EECC4FE0033"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "课程学习功能子系统"
+				quid       	"5EECC54D004C"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED687E0005"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298")
+				    (object Visibility_Relationship
+					quid       	"5EED702B010A"
+					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
+					quidu      	"5EECC4FE0033")
+				    (object Visibility_Relationship
+					quid       	"5EED70C900A2"
+					supplier   	"Use Case View::Use Case Model::Use Cases::资源管理子系统"
+					quidu      	"5EECC56601C5"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "模板管理"
+				quid       	"5EECC7D202BE"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED60340157"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统"
+					quidu      	"5EECC7AB0384")
+				    (object Visibility_Relationship
+					quid       	"5EED6139012E"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298")
+				    (object Visibility_Relationship
+					quid       	"5EED76BD0253"
+					supplier   	"Use Case View::Use Case Model::Use Cases::信息检索"
+					quidu      	"5EED5EF70078"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
 				logical_presentations 	(list unit_reference_list
-				    (object UseCaseDiagram "云迪在线系统关系图"
-					quid       	"5EECC8EF01B0"
-					title      	"云迪在线系统关系图"
+				    (object UseCaseDiagram "Main"
+					quid       	"5EED649C0085"
+					title      	"Main"
 					zoom       	100
 					max_height 	28350
 					max_width  	21600
-					origin_x   	63
-					origin_y   	116
-					items      	(list diagram_item_list
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::测评考试子系统" @24
-						location   	(3376, 464)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@24
-						    location   	(3232, 380)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"测评考试子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC55702C6"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::创新创业管理子系统" @25
-						location   	(4000, 1616)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@25
-						    location   	(3856, 1532)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"创新创业管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC53B03B4"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::公开课管理子系统" @26
-						location   	(3136, 2160)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@26
-						    location   	(2992, 2076)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"公开课管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC4FE0033"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::互动交流" @27
-						location   	(3616, 1232)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@27
-						    location   	(3472, 1148)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"互动交流")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC7C00266"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::基础数据管理子系统" @28
-						location   	(1088, 432)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@28
-						    location   	(944, 348)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"基础数据管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC4D902EF"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::教学管理子系统" @29
-						location   	(2448, 368)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@29
-						    location   	(2304, 284)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"教学管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC7A20163"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::就业培训管理子系统" @30
-						location   	(3376, 1648)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@30
-						    location   	(3232, 1564)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"就业培训管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC52A01ED"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::课程学习功能子系统" @31
-						location   	(4336, 2128)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@31
-						    location   	(4192, 2044)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"课程学习功能子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC54D004C"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::模板管理" @32
-						location   	(3584, 784)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@32
-						    location   	(3440, 700)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"模板管理")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC7D202BE"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::实训实习管理子系统" @33
-						location   	(2704, 1680)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@33
-						    location   	(2560, 1596)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"实训实习管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC50701C2"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::统计分析子系统" @34
-						location   	(2096, 384)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@34
-						    location   	(1952, 300)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"统计分析子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC7C90052"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::知识管理子系统" @35
-						location   	(2880, 368)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@35
-						    location   	(2736, 284)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"知识管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC56F00F7"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::资源管理子系统" @36
-						location   	(2256, 2176)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@36
-						    location   	(2112, 2092)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"资源管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC56601C5"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统" @37
-						location   	(1632, 432)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@37
-						    location   	(1488, 348)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"内容管理子系统")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC7AB0384"
-						width      	300
-						height     	180)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::信息检索" @38
-						location   	(1072, 2080)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@38
-						    location   	(928, 1996)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"信息检索")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EED5EF70078"
-						width      	300
-						height     	180)
-					    (object ImportView "" @39
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED5F69017A"
-						client     	@38
-						supplier   	@28
-						vertices   	(list Points
-						    (1073, 1935)
-						    (1087, 522))
-						line_style 	0)
-					    (object ImportView "" @40
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED606103B8"
-						client     	@26
-						supplier   	@36
-						vertices   	(list Points
-						    (2985, 2162)
-						    (2406, 2173))
-						line_style 	0)
-					    (object ImportView "" @41
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED723C008B"
-						client     	@33
-						supplier   	@26
-						vertices   	(list Points
-						    (2785, 1770)
-						    (3005, 2015))
-						line_style 	0)
-					    (object ImportView "" @42
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED723E00B9"
-						client     	@30
-						supplier   	@26
-						vertices   	(list Points
-						    (3333, 1738)
-						    (3203, 2015))
-						line_style 	0)
-					    (object ImportView "" @43
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED72400257"
-						client     	@25
-						supplier   	@26
-						vertices   	(list Points
-						    (3856, 1706)
-						    (3286, 2064))
-						line_style 	0)
-					    (object ImportView "" @44
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED702B010A"
-						client     	@31
-						supplier   	@26
-						vertices   	(list Points
-						    (4185, 2132)
-						    (3286, 2156))
-						line_style 	0)
-					    (object ImportView "" @45
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED5FD000BB"
-						client     	@37
-						supplier   	@28
-						vertices   	(list Points
-						    (1481, 432)
-						    (1238, 432))
-						line_style 	0)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::系统管理" @46
-						location   	(432, 432)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@46
-						    location   	(288, 348)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	288
-						    justify    	0
-						    label      	"系统管理")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EED79FC0296"
-						width      	300
-						height     	180)
-					    (object ImportView "" @47
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED7A240137"
-						client     	@28
-						supplier   	@46
-						vertices   	(list Points
-						    (937, 432)
-						    (582, 432))
-						line_style 	0)
-					    (object CategoryView "Use Case View::Use Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理" @48
-						location   	(2240, 1008)
-						font       	(object Font
-						    size       	10
-						    face       	"Arial"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@48
-						    location   	(2030, 924)
-						    fill_color 	13434879
-						    nlines     	2
-						    max_width  	420
-						    justify    	0
-						    label      	"频道栏目管理")
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5EECC7B30298"
-						width      	432
-						height     	180)
-					    (object ImportView "" @49
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED5FE80365"
-						client     	@48
-						supplier   	@37
-						vertices   	(list Points
-						    (2087, 863)
-						    (1727, 522))
-						line_style 	0)
-					    (object ImportView "" @50
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED60D5016D"
-						client     	@35
-						supplier   	@48
-						vertices   	(list Points
-						    (2790, 458)
-						    (2384, 863))
-						line_style 	0)
-					    (object ImportView "" @51
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED682C0088"
-						client     	@29
-						supplier   	@48
-						vertices   	(list Points
-						    (2418, 458)
-						    (2286, 863))
-						line_style 	0)
-					    (object ImportView "" @52
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED68340088"
-						client     	@33
-						supplier   	@48
-						vertices   	(list Points
-						    (2603, 1535)
-						    (2302, 1098))
-						line_style 	0)
-					    (object ImportView "" @53
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED68390041"
-						client     	@25
-						supplier   	@48
-						vertices   	(list Points
-						    (3849, 1563)
-						    (2456, 1082))
-						line_style 	0)
-					    (object ImportView "" @54
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED68400255"
-						client     	@30
-						supplier   	@48
-						vertices   	(list Points
-						    (3225, 1563)
-						    (2399, 1098))
-						line_style 	0)
-					    (object ImportView "" @55
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED6084010E"
-						client     	@27
-						supplier   	@48
-						vertices   	(list Points
-						    (3465, 1207)
-						    (2456, 1043))
-						line_style 	0)
-					    (object ImportView "" @56
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED6AD00091"
-						client     	@24
-						supplier   	@48
-						vertices   	(list Points
-						    (3225, 536)
-						    (2456, 903))
-						line_style 	0)
-					    (object ImportView "" @57
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED6139012E"
-						client     	@32
-						supplier   	@48
-						vertices   	(list Points
-						    (3433, 808)
-						    (2456, 971))
-						line_style 	0)
-					    (object ImportView "" @58
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED689F010B"
-						client     	@34
-						supplier   	@48
-						vertices   	(list Points
-						    (2116, 474)
-						    (2206, 863))
-						line_style 	0)
-					    (object ImportView "" @59
-						stereotype 	TRUE
-						line_color 	3342489
-						quidu      	"5EED67D302A0"
-						client     	@36
-						supplier   	@48
-						vertices   	(list Points
-						    (2254, 2031)
-						    (2241, 1098))
-						line_style 	0))))))
-			logical_presentations 	(list unit_reference_list)))
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list))))
+			    (object Class_Category "内容管理子系统"
+				quid       	"5EECC7AB0384"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED5FD000BB"
+					supplier   	"Use Case View::Use Case Model::Use Cases::基础数据管理子系统"
+					quidu      	"5EECC4D902EF")
+				    (object Visibility_Relationship
+					quid       	"5EED66B10177"
+					supplier   	"Use Case View::Use Case Model::Use Cases::信息检索"
+					quidu      	"5EED5EF70078")
+				    (object Visibility_Relationship
+					quid       	"5EED66B3024E"
+					supplier   	"Use Case View::Use Case Model::Use Cases::模板管理"
+					quidu      	"5EECC7D202BE"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class_Category "频道栏目管理"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\频道栏目管理.cat"
+					quid       	"5EECC7B30298")
+				    (object Class_Category "内容管理"
+					is_unit    	TRUE
+					is_loaded  	FALSE
+					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\内容管理.cat"
+					quid       	"5EEDB7210388")
+				    (object Class_Category "内容编辑"
+					quid       	"5EEDB728021C"
+					exportControl 	"Public"
+					logical_models 	(list unit_reference_list)
+					logical_presentations 	(list unit_reference_list)))
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "实训实习管理子系统"
+				quid       	"5EECC50701C2"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED68340088"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298")
+				    (object Visibility_Relationship
+					quid       	"5EED714701A2"
+					supplier   	"Use Case View::Use Case Model::Use Cases::课程学习功能子系统"
+					quidu      	"5EECC54D004C")
+				    (object Visibility_Relationship
+					quid       	"5EED723C008B"
+					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
+					quidu      	"5EECC4FE0033"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "统计分析子系统"
+				quid       	"5EECC7C90052"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED689F010B"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "系统管理"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\系统管理.cat"
+				quid       	"5EED79FC0296")
+			    (object Class_Category "信息检索"
+				quid       	"5EED5EF70078"
+				visible_categories 	(list visibility_relationship_list
+				    (object Visibility_Relationship
+					quid       	"5EED5F69017A"
+					supplier   	"Use Case View::Use Case Model::Use Cases::基础数据管理子系统"
+					quidu      	"5EECC4D902EF")
+				    (object Visibility_Relationship
+					quid       	"5EED6198001E"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
+					quidu      	"5EECC7B30298")
+				    (object Visibility_Relationship
+					quid       	"5EED627C034C"
+					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统"
+					quidu      	"5EECC7AB0384"))
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list)
+				logical_presentations 	(list unit_reference_list))
+			    (object Class_Category "知识管理子系统"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\知识管理子系统.cat"
+				quid       	"5EECC56F00F7")
+			    (object Class_Category "资源管理子系统"
+				is_unit    	TRUE
+				is_loaded  	FALSE
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
+				quid       	"5EECC56601C5"))
+			logical_presentations 	(list unit_reference_list
+			    (object UseCaseDiagram "云迪在线系统关系图"
+				quid       	"5EECC8EF01B0"
+				title      	"云迪在线系统关系图"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	1357
+				origin_y   	116
+				items      	(list diagram_item_list
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::公开课管理子系统" @24
+					location   	(2976, 1088)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@24
+					    location   	(2822, 1004)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	308
+					    justify    	0
+					    label      	"公开课管理子系统")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5EECC4FE0033"
+					width      	320
+					height     	180)
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::基础数据管理子系统" @25
+					location   	(1808, 512)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@25
+					    location   	(1654, 428)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	308
+					    justify    	0
+					    label      	"基础数据管理子系统")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5EECC4D902EF"
+					width      	320
+					height     	180)
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::知识管理子系统" @26
+					location   	(2448, 1856)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@26
+					    location   	(2294, 1772)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	308
+					    justify    	0
+					    label      	"知识管理子系统")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5EECC56F00F7"
+					width      	320
+					height     	180)
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::资源管理子系统" @27
+					location   	(432, 944)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@27
+					    location   	(278, 860)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	308
+					    justify    	0
+					    label      	"资源管理子系统")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5EECC56601C5"
+					width      	320
+					height     	180)
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::内容管理子系统" @28
+					location   	(1072, 1456)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@28
+					    location   	(918, 1372)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	308
+					    justify    	0
+					    label      	"内容管理子系统")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5EECC7AB0384"
+					width      	320
+					height     	180)
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::系统管理" @29
+					location   	(432, 432)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					label      	(object ItemLabel
+					    Parent_View 	@29
+					    location   	(278, 348)
+					    fill_color 	13434879
+					    nlines     	2
+					    max_width  	308
+					    justify    	0
+					    label      	"系统管理")
+					icon_style 	"Icon"
+					line_color 	3342489
+					fill_color 	13434879
+					quidu      	"5EED79FC0296"
+					width      	320
+					height     	180)
+				    (object ImportView "" @30
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5EED7A240137"
+					client     	@25
+					supplier   	@29
+					vertices   	(list Points
+					    (1647, 502)
+					    (592, 440))
+					line_style 	0)
+				    (object ImportView "" @31
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5EEDB89F03CE"
+					client     	@25
+					supplier   	@27
+					vertices   	(list Points
+					    (1647, 561)
+					    (592, 893))
+					line_style 	0)
+				    (object ImportView "" @32
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5EEDB8A80357"
+					client     	@24
+					supplier   	@25
+					vertices   	(list Points
+					    (2815, 1009)
+					    (1968, 590))
+					line_style 	0)
+				    (object ImportView "" @33
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5EED64F90117"
+					client     	@25
+					supplier   	@28
+					vertices   	(list Points
+					    (1736, 602)
+					    (1184, 1311))
+					line_style 	0)
+				    (object ImportView "" @34
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5EEDB9F502D3"
+					client     	@27
+					supplier   	@29
+					vertices   	(list Points
+					    (432, 799)
+					    (432, 522))
+					line_style 	0))))))
 		logical_presentations 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Main"
@@ -1578,7 +1158,67 @@
 		max_width  	21600
 		origin_x   	0
 		origin_y   	0
-		items      	(list diagram_item_list))))
+		items      	(list diagram_item_list
+		    (object CategoryView "Use Case View::Use Case Model::Actor" @35
+			location   	(688, 576)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@35
+			    location   	(486, 492)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	404
+			    justify    	0
+			    label      	"Actor")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5EECC43D0304"
+			width      	416
+			height     	180)
+		    (object CategoryView "Use Case View::Use Case Model::Use Cases" @36
+			location   	(1520, 624)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@36
+			    location   	(1318, 540)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	404
+			    justify    	0
+			    label      	"Use Cases")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5EECC4C403DD"
+			width      	416
+			height     	180)
+		    (object ImportView "" @37
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5EEDBAB40298"
+			client     	@36
+			supplier   	@35
+			vertices   	(list Points
+			    (1311, 611)
+			    (896, 588))
+			line_style 	0)))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"39C9260C00D5"
 	exportControl 	"Public"
@@ -1611,7 +1251,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::java" @60
+		    (object CategoryView "Logical View::java" @38
 			location   	(208, 272)
 			font       	(object Font
 			    size       	10
@@ -1623,7 +1263,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@60
+			    Parent_View 	@38
 			    location   	(64, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1635,7 +1275,7 @@
 			quidu      	"39C92661003B"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::javax" @61
+		    (object CategoryView "Logical View::javax" @39
 			location   	(656, 272)
 			font       	(object Font
 			    size       	10
@@ -1647,7 +1287,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@61
+			    Parent_View 	@39
 			    location   	(512, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1659,7 +1299,7 @@
 			quidu      	"39C926610018"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::org" @62
+		    (object CategoryView "Logical View::org" @40
 			location   	(1104, 272)
 			font       	(object Font
 			    size       	10
@@ -1671,7 +1311,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@62
+			    Parent_View 	@40
 			    location   	(960, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1692,7 +1332,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @63
+		    (object NoteView @41
 			location   	(224, 624)
 			font       	(object Font
 			    size       	10
@@ -1707,7 +1347,7 @@
 			fill_color 	12632256
 			width      	300
 			height     	132)
-		    (object NoteView @64
+		    (object NoteView @42
 			location   	(704, 624)
 			font       	(object Font
 			    size       	10
@@ -1722,7 +1362,7 @@
 			fill_color 	8421631
 			width      	300
 			height     	132)
-		    (object NoteView @65
+		    (object NoteView @43
 			location   	(1200, 624)
 			font       	(object Font
 			    size       	10
@@ -1737,7 +1377,7 @@
 			fill_color 	12615680
 			width      	300
 			height     	132)
-		    (object NoteView @66
+		    (object NoteView @44
 			location   	(1664, 624)
 			font       	(object Font
 			    size       	10
@@ -1752,7 +1392,7 @@
 			fill_color 	16777215
 			width      	300
 			height     	132)
-		    (object Label @67
+		    (object Label @45
 			location   	(81, 369)
 			font       	(object Font
 			    size       	12
@@ -1767,7 +1407,7 @@
 			max_width  	1163
 			justify    	1
 			label      	"J2EE: Java 2 Platform, Enterprise Edition - v 1.2.1")
-		    (object Label @68
+		    (object Label @46
 			location   	(96, 608)
 			font       	(object Font
 			    size       	10
@@ -1782,7 +1422,7 @@
 			max_width  	268
 			justify    	1
 			label      	"Abstract Class")
-		    (object Label @69
+		    (object Label @47
 			location   	(592, 608)
 			font       	(object Font
 			    size       	10
@@ -1797,7 +1437,7 @@
 			max_width  	225
 			justify    	1
 			label      	"Final Class")
-		    (object Label @70
+		    (object Label @48
 			location   	(1104, 608)
 			font       	(object Font
 			    size       	10
@@ -1812,7 +1452,7 @@
 			max_width  	206
 			justify    	1
 			label      	"Interface")
-		    (object Label @71
+		    (object Label @49
 			location   	(1552, 608)
 			font       	(object Font
 			    size       	10
