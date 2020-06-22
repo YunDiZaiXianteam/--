@@ -936,11 +936,11 @@
 				zoom       	100
 				max_height 	28350
 				max_width  	21600
-				origin_x   	1357
+				origin_x   	1356
 				origin_y   	116
 				items      	(list diagram_item_list
 				    (object CategoryView "Use Case View::Use Case Model::Use Cases::公开课管理子系统" @24
-					location   	(2976, 1088)
+					location   	(2848, 592)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -952,7 +952,7 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@24
-					    location   	(2822, 1004)
+					    location   	(2694, 508)
 					    fill_color 	13434879
 					    nlines     	2
 					    max_width  	308
@@ -1040,7 +1040,7 @@
 					width      	320
 					height     	180)
 				    (object CategoryView "Use Case View::Use Case Model::Use Cases::内容管理子系统" @28
-					location   	(1072, 1456)
+					location   	(1808, 1424)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1052,7 +1052,7 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@28
-					    location   	(918, 1372)
+					    location   	(1654, 1340)
 					    fill_color 	13434879
 					    nlines     	2
 					    max_width  	308
@@ -1125,8 +1125,8 @@
 					client     	@24
 					supplier   	@25
 					vertices   	(list Points
-					    (2815, 1009)
-					    (1968, 590))
+					    (2687, 579)
+					    (1968, 523))
 					line_style 	0)
 				    (object ImportView "" @33
 					stereotype 	TRUE
@@ -1135,8 +1135,8 @@
 					client     	@25
 					supplier   	@28
 					vertices   	(list Points
-					    (1736, 602)
-					    (1184, 1311))
+					    (1808, 602)
+					    (1808, 1279))
 					line_style 	0)
 				    (object ImportView "" @34
 					stereotype 	TRUE
