@@ -9,5 +9,300 @@
     is_loaded  	TRUE
     quid       	"5EECC7B30298"
     exportControl 	"Public"
-    logical_models 	(list unit_reference_list)
-    logical_presentations 	(list unit_reference_list))
+    logical_models 	(list unit_reference_list
+	(object Class_Category "频道编辑权限设置"
+	    quid       	"5EF07E4903D4"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "设置频道编辑权限"
+		    quid       	"5EF07EBF033D")
+		(object Association "$UNNAMED$0"
+		    quid       	"5EF07EEE01C9"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$1"
+			    quid       	"5EF07EEF0050"
+			    supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理::频道编辑权限设置::设置频道编辑权限"
+			    quidu      	"5EF07EBF033D"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$2"
+			    quid       	"5EF07EEF0053"
+			    supplier   	"Use Case View::Use Case Model::Actor::管理员"
+			    quidu      	"5EEDB4C3020D"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "频道编辑权限设置"
+		    quid       	"5EF07ED3006C"
+		    title      	"频道编辑权限设置"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Use Case Model::Actor::管理员" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(528, 1072)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(528, 1232)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"管理员")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5EEDB4C3020D"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理::频道编辑权限设置::设置频道编辑权限" @2
+			    location   	(1488, 1056)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(1488, 1194)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"设置频道编辑权限")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EF07EBF033D")
+			(object AssociationViewNew "$UNNAMED$0" @3
+			    location   	(981, 1061)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EF07EEE01C9"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$1" @4
+				    Parent_View 	@3
+				    location   	(421, -59)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EF07EEF0050"
+				    client     	@3
+				    supplier   	@2
+				    vertices   	(list Points
+					(981, 1061)
+					(1378, 1055))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$2" @5
+				    Parent_View 	@3
+				    location   	(421, -59)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EF07EEF0053"
+				    client     	@3
+				    supplier   	@1
+				    vertices   	(list Points
+					(981, 1061)
+					(585, 1068))
+				    line_style 	0)))))))
+	(object Class_Category "频道范围权限设置"
+	    quid       	"5EF07E88021B"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object UseCase "设置频道范围权限"
+		    quid       	"5EF07F0D00F6")
+		(object Association "$UNNAMED$3"
+		    quid       	"5EF07F390049"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$4"
+			    quid       	"5EF07F3902F5"
+			    supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理::频道范围权限设置::设置频道范围权限"
+			    quidu      	"5EF07F0D00F6"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$5"
+			    quid       	"5EF07F3902F7"
+			    supplier   	"Use Case View::Use Case Model::Actor::管理员"
+			    quidu      	"5EEDB4C3020D"))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "频道范围权限设置"
+		    quid       	"5EF07F22019C"
+		    title      	"频道范围权限设置"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Use Case Model::Actor::管理员" @6
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(496, 864)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@6
+				location   	(496, 1024)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	328
+				justify    	0
+				label      	"管理员")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"5EEDB4C3020D"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理::频道范围权限设置::设置频道范围权限" @7
+			    location   	(1312, 864)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@7
+				location   	(1312, 1002)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	630
+				justify    	0
+				label      	"设置频道范围权限")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EF07F0D00F6")
+			(object AssociationViewNew "$UNNAMED$3" @8
+			    location   	(876, 864)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EF07F390049"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$4" @9
+				    Parent_View 	@8
+				    location   	(380, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EF07F3902F5"
+				    client     	@8
+				    supplier   	@7
+				    vertices   	(list Points
+					(876, 864)
+					(1200, 864))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$5" @10
+				    Parent_View 	@8
+				    location   	(380, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5EF07F3902F7"
+				    client     	@8
+				    supplier   	@6
+				    vertices   	(list Points
+					(876, 864)
+					(553, 864))
+				    line_style 	0))))))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "频道设置"
+	    quid       	"5EF07E9B02E5"
+	    title      	"频道设置"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理::频道编辑权限设置" @11
+		    location   	(416, 752)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@11
+			location   	(272, 668)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"频道编辑权限设置")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EF07E4903D4"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理::频道范围权限设置" @12
+		    location   	(1008, 720)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@12
+			location   	(864, 636)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"频道范围权限设置")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EF07E88021B"
+		    width      	300
+		    height     	180)))))
