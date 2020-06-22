@@ -730,19 +730,10 @@
 				    (object Visibility_Relationship
 					quid       	"5EED712F023A"
 					supplier   	"Use Case View::Use Case Model::Use Cases::课程学习功能子系统"
-					quidu      	"5EECC54D004C")
-				    (object Visibility_Relationship
-					quid       	"5EED72400257"
-					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
-					quidu      	"5EECC4FE0033"))
+					quidu      	"5EECC54D004C"))
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list)
 				logical_presentations 	(list unit_reference_list))
-			    (object Class_Category "公开课管理子系统"
-				is_unit    	TRUE
-				is_loaded  	FALSE
-				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\公开课管理.cat"
-				quid       	"5EECC4FE0033")
 			    (object Class_Category "互动交流"
 				quid       	"5EECC7C00266"
 				visible_categories 	(list visibility_relationship_list
@@ -760,7 +751,7 @@
 			    (object Class_Category "基础数据管理子系统"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\基础数据管理.cat"
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\基础数据管理子系统.cat"
 				quid       	"5EECC4D902EF")
 			    (object Class_Category "教学管理子系统"
 				quid       	"5EECC7A20163"
@@ -782,11 +773,7 @@
 				    (object Visibility_Relationship
 					quid       	"5EED71130119"
 					supplier   	"Use Case View::Use Case Model::Use Cases::课程学习功能子系统"
-					quidu      	"5EECC54D004C")
-				    (object Visibility_Relationship
-					quid       	"5EED723E00B9"
-					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
-					quidu      	"5EECC4FE0033"))
+					quidu      	"5EECC54D004C"))
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list)
 				logical_presentations 	(list unit_reference_list))
@@ -797,10 +784,6 @@
 					quid       	"5EED687E0005"
 					supplier   	"Use Case View::Use Case Model::Use Cases::内容管理子系统::频道栏目管理"
 					quidu      	"5EECC7B30298")
-				    (object Visibility_Relationship
-					quid       	"5EED702B010A"
-					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
-					quidu      	"5EECC4FE0033")
 				    (object Visibility_Relationship
 					quid       	"5EED70C900A2"
 					supplier   	"Use Case View::Use Case Model::Use Cases::资源管理子系统"
@@ -855,12 +838,12 @@
 				    (object Class_Category "频道栏目管理"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\频道栏目管理.cat"
+					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\频道栏目管理子系统.cat"
 					quid       	"5EECC7B30298")
 				    (object Class_Category "内容管理"
 					is_unit    	TRUE
 					is_loaded  	FALSE
-					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\内容管理.cat"
+					file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\内容管理子系统.cat"
 					quid       	"5EEDB7210388")
 				    (object Class_Category "内容编辑"
 					quid       	"5EEDB728021C"
@@ -878,11 +861,7 @@
 				    (object Visibility_Relationship
 					quid       	"5EED714701A2"
 					supplier   	"Use Case View::Use Case Model::Use Cases::课程学习功能子系统"
-					quidu      	"5EECC54D004C")
-				    (object Visibility_Relationship
-					quid       	"5EED723C008B"
-					supplier   	"Use Case View::Use Case Model::Use Cases::公开课管理子系统"
-					quidu      	"5EECC4FE0033"))
+					quidu      	"5EECC54D004C"))
 				exportControl 	"Public"
 				logical_models 	(list unit_reference_list)
 				logical_presentations 	(list unit_reference_list))
@@ -899,7 +878,7 @@
 			    (object Class_Category "系统管理"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\系统管理.cat"
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\系统管理子系统.cat"
 				quid       	"5EED79FC0296")
 			    (object Class_Category "信息检索"
 				quid       	"5EED5EF70078"
@@ -922,12 +901,12 @@
 			    (object Class_Category "知识管理子系统"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"D:\\rose\\0620\\云迪用例模型\\知识管理子系统.cat"
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\知识管理子系统.cat"
 				quid       	"5EECC56F00F7")
 			    (object Class_Category "资源管理子系统"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"D:\\实训\\云迪在线网络学习平台\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
+				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
 				quid       	"5EECC56601C5"))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "云迪在线系统关系图"
@@ -936,39 +915,10 @@
 				zoom       	100
 				max_height 	28350
 				max_width  	21600
-<<<<<<< HEAD
 				origin_x   	1356
-=======
-				origin_x   	344
->>>>>>> d300044c674e608b2e020072c3bcfbaa399633ef
 				origin_y   	116
 				items      	(list diagram_item_list
-				    (object CategoryView "Use Case View::Use Case Model::Use Cases::公开课管理子系统" @24
-					location   	(2976, 1088)
-					font       	(object Font
-					    size       	10
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object ItemLabel
-					    Parent_View 	@24
-					    location   	(2822, 1004)
-					    fill_color 	13434879
-					    nlines     	2
-					    max_width  	308
-					    justify    	0
-					    label      	"公开课管理子系统")
-					icon_style 	"Icon"
-					line_color 	3342489
-					fill_color 	13434879
-					quidu      	"5EECC4FE0033"
-					width      	320
-					height     	180)
-				    (object CategoryView "Use Case View::Use Case Model::Use Cases::基础数据管理子系统" @25
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::基础数据管理子系统" @24
 					location   	(1808, 512)
 					font       	(object Font
 					    size       	10
@@ -980,7 +930,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@25
+					    Parent_View 	@24
 					    location   	(1654, 428)
 					    fill_color 	13434879
 					    nlines     	2
@@ -993,7 +943,7 @@
 					quidu      	"5EECC4D902EF"
 					width      	320
 					height     	180)
-				    (object CategoryView "Use Case View::Use Case Model::Use Cases::知识管理子系统" @26
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::知识管理子系统" @25
 					location   	(2448, 1856)
 					font       	(object Font
 					    size       	10
@@ -1005,7 +955,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@26
+					    Parent_View 	@25
 					    location   	(2294, 1772)
 					    fill_color 	13434879
 					    nlines     	2
@@ -1018,7 +968,7 @@
 					quidu      	"5EECC56F00F7"
 					width      	320
 					height     	180)
-				    (object CategoryView "Use Case View::Use Case Model::Use Cases::资源管理子系统" @27
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::资源管理子系统" @26
 					location   	(432, 944)
 					font       	(object Font
 					    size       	10
@@ -1030,7 +980,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@27
+					    Parent_View 	@26
 					    location   	(278, 860)
 					    fill_color 	13434879
 					    nlines     	2
@@ -1043,8 +993,8 @@
 					quidu      	"5EECC56601C5"
 					width      	320
 					height     	180)
-				    (object CategoryView "Use Case View::Use Case Model::Use Cases::内容管理子系统" @28
-					location   	(1072, 1456)
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::内容管理子系统" @27
+					location   	(1488, 1424)
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1055,8 +1005,8 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@28
-					    location   	(918, 1372)
+					    Parent_View 	@27
+					    location   	(1334, 1340)
 					    fill_color 	13434879
 					    nlines     	2
 					    max_width  	308
@@ -1068,7 +1018,7 @@
 					quidu      	"5EECC7AB0384"
 					width      	320
 					height     	180)
-				    (object CategoryView "Use Case View::Use Case Model::Use Cases::系统管理" @29
+				    (object CategoryView "Use Case View::Use Case Model::Use Cases::系统管理" @28
 					location   	(432, 432)
 					font       	(object Font
 					    size       	10
@@ -1080,7 +1030,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@29
+					    Parent_View 	@28
 					    location   	(278, 348)
 					    fill_color 	13434879
 					    nlines     	2
@@ -1093,7 +1043,7 @@
 					quidu      	"5EED79FC0296"
 					width      	320
 					height     	180)
-				    (object ImportView "" @30
+				    (object ImportView "" @29
 					font       	(object Font
 					    size       	10
 					    face       	"Arial"
@@ -1106,11 +1056,30 @@
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5EED7A240137"
-					client     	@25
-					supplier   	@29
+					client     	@24
+					supplier   	@28
 					vertices   	(list Points
 					    (1647, 502)
 					    (592, 440))
+					line_style 	0)
+				    (object ImportView "" @30
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5EEDB89F03CE"
+					client     	@24
+					supplier   	@26
+					vertices   	(list Points
+					    (1647, 561)
+					    (592, 893))
 					line_style 	0)
 				    (object ImportView "" @31
 					font       	(object Font
@@ -1124,12 +1093,12 @@
 					    default_color 	TRUE)
 					stereotype 	TRUE
 					line_color 	3342489
-					quidu      	"5EEDB89F03CE"
-					client     	@25
+					quidu      	"5EED64F90117"
+					client     	@24
 					supplier   	@27
 					vertices   	(list Points
-					    (1647, 561)
-					    (592, 893))
+					    (1775, 602)
+					    (1538, 1279))
 					line_style 	0)
 				    (object ImportView "" @32
 					font       	(object Font
@@ -1143,47 +1112,9 @@
 					    default_color 	TRUE)
 					stereotype 	TRUE
 					line_color 	3342489
-					quidu      	"5EEDB8A80357"
-					client     	@24
-					supplier   	@25
-					vertices   	(list Points
-					    (2815, 1009)
-					    (1968, 590))
-					line_style 	0)
-				    (object ImportView "" @33
-					font       	(object Font
-					    size       	10
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"5EED64F90117"
-					client     	@25
-					supplier   	@28
-					vertices   	(list Points
-					    (1736, 602)
-					    (1184, 1311))
-					line_style 	0)
-				    (object ImportView "" @34
-					font       	(object Font
-					    size       	10
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					stereotype 	TRUE
-					line_color 	3342489
 					quidu      	"5EEDB9F502D3"
-					client     	@27
-					supplier   	@29
+					client     	@26
+					supplier   	@28
 					vertices   	(list Points
 					    (432, 799)
 					    (432, 522))
@@ -1199,7 +1130,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Use Case View::Use Case Model::Actor" @35
+		    (object CategoryView "Use Case View::Use Case Model::Actor" @33
 			location   	(688, 576)
 			font       	(object Font
 			    size       	10
@@ -1211,7 +1142,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@35
+			    Parent_View 	@33
 			    location   	(486, 492)
 			    fill_color 	13434879
 			    nlines     	2
@@ -1224,7 +1155,7 @@
 			quidu      	"5EECC43D0304"
 			width      	416
 			height     	180)
-		    (object CategoryView "Use Case View::Use Case Model::Use Cases" @36
+		    (object CategoryView "Use Case View::Use Case Model::Use Cases" @34
 			location   	(1520, 624)
 			font       	(object Font
 			    size       	10
@@ -1236,7 +1167,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@36
+			    Parent_View 	@34
 			    location   	(1318, 540)
 			    fill_color 	13434879
 			    nlines     	2
@@ -1249,12 +1180,12 @@
 			quidu      	"5EECC4C403DD"
 			width      	416
 			height     	180)
-		    (object ImportView "" @37
+		    (object ImportView "" @35
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5EEDBAB40298"
-			client     	@36
-			supplier   	@35
+			client     	@34
+			supplier   	@33
 			vertices   	(list Points
 			    (1311, 611)
 			    (896, 588))
@@ -1291,7 +1222,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::java" @38
+		    (object CategoryView "Logical View::java" @36
 			location   	(208, 272)
 			font       	(object Font
 			    size       	10
@@ -1303,7 +1234,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@38
+			    Parent_View 	@36
 			    location   	(64, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1315,7 +1246,7 @@
 			quidu      	"39C92661003B"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::javax" @39
+		    (object CategoryView "Logical View::javax" @37
 			location   	(656, 272)
 			font       	(object Font
 			    size       	10
@@ -1327,7 +1258,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@39
+			    Parent_View 	@37
 			    location   	(512, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1339,7 +1270,7 @@
 			quidu      	"39C926610018"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::org" @40
+		    (object CategoryView "Logical View::org" @38
 			location   	(1104, 272)
 			font       	(object Font
 			    size       	10
@@ -1351,7 +1282,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@40
+			    Parent_View 	@38
 			    location   	(960, 188)
 			    nlines     	2
 			    max_width  	288
@@ -1372,7 +1303,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @41
+		    (object NoteView @39
 			location   	(224, 624)
 			font       	(object Font
 			    size       	10
@@ -1387,7 +1318,7 @@
 			fill_color 	12632256
 			width      	300
 			height     	132)
-		    (object NoteView @42
+		    (object NoteView @40
 			location   	(704, 624)
 			font       	(object Font
 			    size       	10
@@ -1402,7 +1333,7 @@
 			fill_color 	8421631
 			width      	300
 			height     	132)
-		    (object NoteView @43
+		    (object NoteView @41
 			location   	(1200, 624)
 			font       	(object Font
 			    size       	10
@@ -1417,7 +1348,7 @@
 			fill_color 	12615680
 			width      	300
 			height     	132)
-		    (object NoteView @44
+		    (object NoteView @42
 			location   	(1664, 624)
 			font       	(object Font
 			    size       	10
@@ -1432,7 +1363,7 @@
 			fill_color 	16777215
 			width      	300
 			height     	132)
-		    (object Label @45
+		    (object Label @43
 			location   	(81, 369)
 			font       	(object Font
 			    size       	12
@@ -1447,7 +1378,7 @@
 			max_width  	1163
 			justify    	1
 			label      	"J2EE: Java 2 Platform, Enterprise Edition - v 1.2.1")
-		    (object Label @46
+		    (object Label @44
 			location   	(96, 608)
 			font       	(object Font
 			    size       	10
@@ -1462,7 +1393,7 @@
 			max_width  	268
 			justify    	1
 			label      	"Abstract Class")
-		    (object Label @47
+		    (object Label @45
 			location   	(592, 608)
 			font       	(object Font
 			    size       	10
@@ -1477,7 +1408,7 @@
 			max_width  	225
 			justify    	1
 			label      	"Final Class")
-		    (object Label @48
+		    (object Label @46
 			location   	(1104, 608)
 			font       	(object Font
 			    size       	10
@@ -1492,7 +1423,7 @@
 			max_width  	206
 			justify    	1
 			label      	"Interface")
-		    (object Label @49
+		    (object Label @47
 			location   	(1552, 608)
 			font       	(object Font
 			    size       	10
@@ -2498,11 +2429,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-<<<<<<< HEAD
-			value      	".;D:\\Java\\jdk1.8.0_161\\lib;D:\\Java\\jdk1.8.0_161\\lib\\tools.jar")
-=======
-			value      	".;D:\\Java\\jdk1.8.0_101\\lib;D:\\Java\\jdk1.8.0_101\\lib\\tools.jar")
->>>>>>> d300044c674e608b2e020072c3bcfbaa399633ef
+			value      	" .;E:\\java\\jdk1.8.0_161\\lib;E:\\java\\jdk1.8.0_161\\lib\\tools.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
