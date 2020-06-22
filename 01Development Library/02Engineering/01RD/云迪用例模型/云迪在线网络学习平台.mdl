@@ -927,7 +927,7 @@
 			    (object Class_Category "资源管理子系统"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
+				file_name  	"D:\\实训\\云迪在线网络学习平台\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
 				quid       	"5EECC56601C5"))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "云迪在线系统关系图"
@@ -936,7 +936,11 @@
 				zoom       	100
 				max_height 	28350
 				max_width  	21600
+<<<<<<< HEAD
 				origin_x   	1356
+=======
+				origin_x   	344
+>>>>>>> d300044c674e608b2e020072c3bcfbaa399633ef
 				origin_y   	116
 				items      	(list diagram_item_list
 				    (object CategoryView "Use Case View::Use Case Model::Use Cases::公开课管理子系统" @24
@@ -2494,7 +2498,11 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
+<<<<<<< HEAD
 			value      	".;D:\\Java\\jdk1.8.0_161\\lib;D:\\Java\\jdk1.8.0_161\\lib\\tools.jar")
+=======
+			value      	".;D:\\Java\\jdk1.8.0_101\\lib;D:\\Java\\jdk1.8.0_101\\lib\\tools.jar")
+>>>>>>> d300044c674e608b2e020072c3bcfbaa399633ef
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
