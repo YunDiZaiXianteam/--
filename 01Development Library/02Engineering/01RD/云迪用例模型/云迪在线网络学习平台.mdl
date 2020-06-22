@@ -927,7 +927,7 @@
 			    (object Class_Category "资源管理子系统"
 				is_unit    	TRUE
 				is_loaded  	FALSE
-				file_name  	"C:\\Users\\李轶楠\\Desktop\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
+				file_name  	"D:\\实训\\云迪在线网络学习平台\\--\\01Development Library\\02Engineering\\01RD\\云迪用例模型\\资源管理子系统.cat"
 				quid       	"5EECC56601C5"))
 			logical_presentations 	(list unit_reference_list
 			    (object UseCaseDiagram "云迪在线系统关系图"
@@ -936,7 +936,7 @@
 				zoom       	100
 				max_height 	28350
 				max_width  	21600
-				origin_x   	1357
+				origin_x   	344
 				origin_y   	116
 				items      	(list diagram_item_list
 				    (object CategoryView "Use Case View::Use Case Model::Use Cases::公开课管理子系统" @24
@@ -1109,6 +1109,15 @@
 					    (592, 440))
 					line_style 	0)
 				    (object ImportView "" @31
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5EEDB89F03CE"
@@ -1119,6 +1128,15 @@
 					    (592, 893))
 					line_style 	0)
 				    (object ImportView "" @32
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5EEDB8A80357"
@@ -1129,6 +1147,15 @@
 					    (1968, 590))
 					line_style 	0)
 				    (object ImportView "" @33
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5EED64F90117"
@@ -1139,6 +1166,15 @@
 					    (1184, 1311))
 					line_style 	0)
 				    (object ImportView "" @34
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5EEDB9F502D3"
@@ -2458,7 +2494,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	" .;E:\\java\\jdk1.8.0_161\\lib;E:\\java\\jdk1.8.0_161\\lib\\tools.jar")
+			value      	".;D:\\Java\\jdk1.8.0_101\\lib;D:\\Java\\jdk1.8.0_101\\lib\\tools.jar")
 		    (object Attribute
 			tool       	"Java"
 			name       	"EditorType"
