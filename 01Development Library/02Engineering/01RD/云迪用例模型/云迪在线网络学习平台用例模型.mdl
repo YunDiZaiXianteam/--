@@ -2161,7 +2161,7 @@
 								quidu      	"5EF168D20185"
 								height     	118)
 							    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::资源管理::授课讲师管理::实习师资" @89
-								location   	(1856, 160)
+								location   	(1904, 160)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -2173,7 +2173,7 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@89
-								    location   	(1856, 298)
+								    location   	(1904, 298)
 								    anchor_loc 	1
 								    nlines     	2
 								    max_width  	630
@@ -2184,7 +2184,7 @@
 								fill_color 	13434879
 								quidu      	"5EF1A15402FC")
 							    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::资源管理::授课讲师管理::培训师资" @90
-								location   	(1872, 480)
+								location   	(1904, 480)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -2196,7 +2196,7 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@90
-								    location   	(1872, 618)
+								    location   	(1904, 618)
 								    anchor_loc 	1
 								    nlines     	2
 								    max_width  	630
@@ -2207,7 +2207,7 @@
 								fill_color 	13434879
 								quidu      	"5EF1A168035E")
 							    (object UseCaseView "Use Case View::Use-Case Model::Use Cases::后台::资源管理::授课讲师管理::创新创业师资" @91
-								location   	(1872, 784)
+								location   	(1904, 784)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -2219,7 +2219,7 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@91
-								    location   	(1872, 922)
+								    location   	(1904, 922)
 								    anchor_loc 	1
 								    nlines     	2
 								    max_width  	630
@@ -2241,7 +2241,7 @@
 								    default_color 	TRUE)
 								stereotype 	(object SegLabel @93
 								    Parent_View 	@92
-								    location   	(1506, 395)
+								    location   	(1528, 394)
 								    font       	(object Font
 									size       	9
 									face       	"Arial"
@@ -2265,8 +2265,8 @@
 								client     	@89
 								supplier   	@86
 								vertices   	(list Points
-								    (1745, 195)
-								    (1196, 390))
+								    (1792, 193)
+								    (1196, 392))
 								line_style 	0)
 							    (object DependencyView "" @94
 								font       	(object Font
@@ -2280,7 +2280,7 @@
 								    default_color 	TRUE)
 								stereotype 	(object SegLabel @95
 								    Parent_View 	@94
-								    location   	(1474, 560)
+								    location   	(1489, 560)
 								    font       	(object Font
 									size       	9
 									face       	"Arial"
@@ -2304,7 +2304,7 @@
 								client     	@90
 								supplier   	@86
 								vertices   	(list Points
-								    (1762, 469)
+								    (1792, 469)
 								    (1196, 435))
 								line_style 	0)
 							    (object DependencyView "" @96
@@ -2319,7 +2319,7 @@
 								    default_color 	TRUE)
 								stereotype 	(object SegLabel @97
 								    Parent_View 	@96
-								    location   	(1436, 704)
+								    location   	(1452, 704)
 								    font       	(object Font
 									size       	9
 									face       	"Arial"
@@ -2343,8 +2343,8 @@
 								client     	@91
 								supplier   	@86
 								vertices   	(list Points
-								    (1762, 732)
-								    (1196, 479))
+								    (1792, 733)
+								    (1196, 476))
 								line_style 	0)
 							    (object ClassView "Class" "Use Case View::Business Use-Case Model::Actors::资源库管理员" @98
 								ShowCompartmentStereotypes 	TRUE
