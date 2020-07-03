@@ -9,5 +9,527 @@
     is_loaded  	TRUE
     quid       	"5EF9A84602CA"
     exportControl 	"Public"
-    logical_models 	(list unit_reference_list)
-    logical_presentations 	(list unit_reference_list))
+    logical_models 	(list unit_reference_list
+	(object Association "$UNNAMED$0"
+	    quid       	"5EFDA7710113"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5EFDA7720092"
+		    supplier   	"Logical View::Analysis Model::知识管理::知识信息"
+		    quidu      	"5EFD36D102A4"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5EFDA7720096"
+		    supplier   	"Logical View::Analysis Model::知识管理::权威知识信息"
+		    quidu      	"5EFD36BF003F"
+		    is_navigable 	TRUE
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$3"
+	    quid       	"5EFE8E6002D2"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5EFE8E61012B"
+		    supplier   	"Logical View::Analysis Model::知识管理::问题信息"
+		    quidu      	"5EFD36ED022A"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5EFE8E61012F"
+		    supplier   	"Logical View::Analysis Model::知识管理::权威知识管理员信息"
+		    quidu      	"5EFD36DE0070"
+		    client_cardinality 	(value cardinality "1..n"))))
+	(object Association "$UNNAMED$6"
+	    quid       	"5EFE8E630243"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"5EFE8E640174"
+		    supplier   	"Logical View::Analysis Model::知识管理::权威知识信息"
+		    quidu      	"5EFD36BF003F"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$8"
+		    quid       	"5EFE8E640178"
+		    supplier   	"Logical View::Analysis Model::知识管理::权威知识管理员信息"
+		    quidu      	"5EFD36DE0070"
+		    client_cardinality 	(value cardinality "1..n"))))
+	(object Association "$UNNAMED$9"
+	    quid       	"5EFE8E660296"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"5EFE8E670150"
+		    supplier   	"Logical View::Analysis Model::知识管理::知识信息"
+		    quidu      	"5EFD36D102A4"
+		    client_cardinality 	(value cardinality "0..n")
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$11"
+		    quid       	"5EFE8E670154"
+		    supplier   	"Logical View::Analysis Model::知识管理::权威知识管理员信息"
+		    quidu      	"5EFD36DE0070"
+		    client_cardinality 	(value cardinality "1..n")))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "知识管理"
+	    quid       	"5EFD870D009B"
+	    title      	"知识管理"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::Analysis Model::知识管理::问题信息" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(736, 480)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(525, 190)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	422
+			justify    	0
+			label      	"问题信息")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@1
+			location   	(525, 143)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	422
+			justify    	0
+			label      	"<<entity>>")
+		    icon       	"entity"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EFD36ED022A"
+		    width      	440
+		    height     	696
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::Analysis Model::知识管理::权威知识信息" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1744, 432)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1527, 119)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	434
+			justify    	0
+			label      	"权威知识信息")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@2
+			location   	(1527, 72)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	434
+			justify    	0
+			label      	"<<entity>>")
+		    icon       	"entity"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EFD36BF003F"
+		    width      	452
+		    height     	742
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::Analysis Model::知识管理::知识信息" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2432, 1248)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(2221, 958)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	422
+			justify    	0
+			label      	"知识信息")
+		    stereotype 	(object ItemLabel
+			Parent_View 	@3
+			location   	(2221, 911)
+			fill_color 	13434879
+			anchor     	10
+			nlines     	1
+			max_width  	422
+			justify    	0
+			label      	"<<entity>>")
+		    icon       	"entity"
+		    icon_style 	"Label"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EFD36D102A4"
+		    width      	440
+		    height     	696
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @4
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EFDA5010292"
+		    client     	@2
+		    supplier   	@3
+		    vertices   	(list Points
+			(1970, 700)
+			(2211, 986))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::Analysis Model::知识管理::权威知识管理员信息" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(784, 1424)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(578, 1137)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	412
+			justify    	0
+			label      	"权威知识管理员信息")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EFD36DE0070"
+		    width      	430
+		    height     	596
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$3" @6
+		    location   	(760, 976)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EFE8E6002D2"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @7
+			    Parent_View 	@6
+			    location   	(-24, -448)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EFE8E61012B"
+			    client     	@6
+			    supplier   	@1
+			    vertices   	(list Points
+				(760, 976)
+				(752, 828))
+			    line_style 	0
+			    label      	(object SegLabel @8
+				Parent_View 	@7
+				location   	(808, 842)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$5" @9
+			    Parent_View 	@6
+			    location   	(-24, -448)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EFE8E61012F"
+			    client     	@6
+			    supplier   	@5
+			    vertices   	(list Points
+				(760, 976)
+				(767, 1125))
+			    line_style 	0
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(821, 1108)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object AssociationViewNew "$UNNAMED$6" @11
+		    location   	(1258, 933)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EFE8E630243"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$7" @12
+			    Parent_View 	@11
+			    location   	(474, -491)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EFE8E640174"
+			    client     	@11
+			    supplier   	@2
+			    vertices   	(list Points
+				(1258, 933)
+				(1517, 664))
+			    line_style 	0
+			    label      	(object SegLabel @13
+				Parent_View 	@12
+				location   	(1530, 731)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$8" @14
+			    Parent_View 	@11
+			    location   	(474, -491)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EFE8E640178"
+			    client     	@11
+			    supplier   	@5
+			    vertices   	(list Points
+				(1258, 933)
+				(999, 1199))
+			    line_style 	0
+			    label      	(object SegLabel @15
+				Parent_View 	@14
+				location   	(1064, 1212)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object AssociationViewNew "$UNNAMED$9" @16
+		    location   	(1605, 1335)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EFE8E660296"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$10" @17
+			    Parent_View 	@16
+			    location   	(821, -89)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EFE8E670150"
+			    client     	@16
+			    supplier   	@3
+			    vertices   	(list Points
+				(1605, 1335)
+				(2211, 1270))
+			    line_style 	0
+			    label      	(object SegLabel @18
+				Parent_View 	@17
+				location   	(2156, 1331)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$11" @19
+			    Parent_View 	@16
+			    location   	(821, -89)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5EFE8E670154"
+			    client     	@16
+			    supplier   	@5
+			    vertices   	(list Points
+				(1605, 1335)
+				(999, 1399))
+			    line_style 	0
+			    label      	(object SegLabel @20
+				Parent_View 	@19
+				location   	(1066, 1447)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..n"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))))))
