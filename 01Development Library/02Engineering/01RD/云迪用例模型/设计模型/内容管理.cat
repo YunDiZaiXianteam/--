@@ -10,7 +10,7 @@
     quid       	"5EF9A83B01AF"
     exportControl 	"Public"
     logical_models 	(list unit_reference_list
-	(object Class "nrxx.java"
+	(object Class "Contentg.java"
 	    quid       	"5EFD4E7E0075"
 	    stereotype 	"entity"
 	    class_attributes 	(list class_attribute_list
@@ -22,7 +22,7 @@
 		    quid       	"5EFD4EA7024F")
 		(object ClassAttribute "nrxx_state"
 		    quid       	"5EFD4EAC026D")))
-	(object Class "lbxx.java"
+	(object Class "Genre.java"
 	    quid       	"5EFD4EB701D6"
 	    stereotype 	"entity"
 	    class_attributes 	(list class_attribute_list
@@ -32,7 +32,7 @@
 		    quid       	"5EFD4ECB0167")
 		(object ClassAttribute "lbxx_type"
 		    quid       	"5EFD4ECF000D")))
-	(object Class "pdxx.java"
+	(object Class "Pin.java"
 	    quid       	"5EFD4ED701B4"
 	    stereotype 	"entity"
 	    class_attributes 	(list class_attribute_list
@@ -44,7 +44,7 @@
 		    quid       	"5EFD4EEB0257")
 		(object ClassAttribute "pdxx_role"
 		    quid       	"5EFD4EF003D1")))
-	(object Class "zyadmin.java"
+	(object Class "ZyAdmin.java"
 	    quid       	"5EFD4EF701D1"
 	    stereotype 	"entity"
 	    class_attributes 	(list class_attribute_list
@@ -53,21 +53,19 @@
 		(object ClassAttribute "zyadmin_name"
 		    quid       	"5EFD4F0B03A8")
 		(object ClassAttribute "zyadmin_pwd"
-		    quid       	"5EFD4F0F0371")
-		(object ClassAttribute "zyadmin_limit"
-		    quid       	"5EFD4F120201")))
+		    quid       	"5EFD4F0F0371")))
 	(object Association "$UNNAMED$0"
 	    quid       	"5EFE74D30226"
 	    roles      	(list role_list
 		(object Role "$UNNAMED$1"
 		    quid       	"5EFE74D303B5"
-		    supplier   	"Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java"
+		    supplier   	"Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java"
 		    quidu      	"5EFD4ED701B4"
 		    client_cardinality 	(value cardinality "1..n")
 		    is_navigable 	TRUE)
 		(object Role "$UNNAMED$2"
 		    quid       	"5EFE74D303B8"
-		    supplier   	"Logical View::Design Model::Use-Case Realizations::内容管理::lbxx.java"
+		    supplier   	"Logical View::Design Model::Use-Case Realizations::内容管理::Genre.java"
 		    quidu      	"5EFD4EB701D6"
 		    client_cardinality 	(value cardinality "1")
 		    is_aggregate 	TRUE)))
@@ -75,20 +73,20 @@
 	    quid       	"5EFD4FAE00A9"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object Class "lbgl.jsp"
+		(object Class "Category.jsp"
 		    quid       	"5EFD517002A2"
 		    stereotype 	"boundary")
 		(object Class_Category "更改名称"
 		    quid       	"5EFD4FD2031F"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "ggmc_servlet.java"
+			(object Class "UpdateServlet.java"
 			    quid       	"5EFD51B40286"
 			    stereotype 	"control")
-			(object Class "ggmc_success.jsp"
+			(object Class "UpdateSuccess.jsp"
 			    quid       	"5EFD51CE011F"
 			    stereotype 	"boundary")
-			(object Class "ggmc_failure.jsp"
+			(object Class "UpdateFailure.jsp"
 			    quid       	"5EFD51D80018"
 			    stereotype 	"boundary")
 			(object Mechanism @1
@@ -144,7 +142,7 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::lbgl.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::Category.jsp"
 				    quidu      	"5EFD517002A2"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -195,21 +193,21 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::更改名称::ggmc_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::更改名称::UpdateServlet.java"
 				    quidu      	"5EFD51B40286"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$7"
 				    quid       	"5EFD51EA01E2"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::更改名称::ggmc_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::更改名称::UpdateSuccess.jsp"
 				    quidu      	"5EFD51CE011F"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$8"
 				    quid       	"5EFD51ED0073"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::更改名称::ggmc_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::更改名称::UpdateFailure.jsp"
 				    quidu      	"5EFD51D80018"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -225,7 +223,7 @@
 					    quid       	"5EFD52BD0351"
 					    supplier   	"$UNNAMED$8"
 					    quidu      	"5EFD51ED0073"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::lbxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Genre.java"
 				    quidu      	"5EFD4EB701D6"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -714,16 +712,16 @@
 		    quid       	"5EFD7E6B00B6"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "lbgl.jsp"
+			(object Class "Category.jsp"
 			    quid       	"5EFD80AA039C"
 			    stereotype 	"boundary")
-			(object Class "xjdl_success.jsp"
+			(object Class "AddSuccess.jsp"
 			    quid       	"5EFD8157013F"
 			    stereotype 	"boundary")
-			(object Class "xjdl_failure.jsp"
+			(object Class "AddFailure.jsp"
 			    quid       	"5EFD81650386"
 			    stereotype 	"boundary")
-			(object Class "xjdl_servlet.java"
+			(object Class "AddServlet.java"
 			    quid       	"5EFD817202C4"
 			    stereotype 	"control")
 			(object Mechanism @27
@@ -779,21 +777,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::lbgl.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::Category.jsp"
 				    quidu      	"5EFD80AA039C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$12"
 				    quid       	"5EFD819801F5"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::xjdl_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::AddSuccess.jsp"
 				    quidu      	"5EFD8157013F"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$13"
 				    quid       	"5EFD819A03A8"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::xjdl_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::AddFailure.jsp"
 				    quidu      	"5EFD81650386"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -844,7 +842,7 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::xjdl_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建大类::AddServlet.java"
 				    quidu      	"5EFD817202C4"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -860,7 +858,7 @@
 					    quid       	"5EFD822D009E"
 					    supplier   	"$UNNAMED$13"
 					    quidu      	"5EFD819A03A8"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::lbxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Genre.java"
 				    quidu      	"5EFD4EB701D6"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -958,7 +956,7 @@
 					y_coord    	98
 					Nested     	TRUE))
 				(object InterObjView "$UNNAMED$12" @33
-				    location   	(1088, 256)
+				    location   	(1088, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -970,7 +968,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@33
-					location   	(1088, 280)
+					location   	(1088, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	687
@@ -982,7 +980,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD819801F5"
 				    width      	229
-				    height     	884
+				    height     	916
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -995,7 +993,7 @@
 					y_coord    	0
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$13" @35
-				    location   	(1504, 256)
+				    location   	(1504, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1007,7 +1005,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@35
-					location   	(1504, 280)
+					location   	(1504, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	687
@@ -1019,7 +1017,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD819A03A8"
 				    width      	229
-				    height     	884
+				    height     	916
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1032,7 +1030,7 @@
 					y_coord    	0
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$11" @37
-				    location   	(1984, 272)
+				    location   	(1984, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1044,7 +1042,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@37
-					location   	(1984, 295)
+					location   	(1984, 247)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	471
@@ -1056,7 +1054,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD81A001D4"
 				    width      	157
-				    height     	868
+				    height     	916
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -1349,16 +1347,16 @@
 		    quid       	"5EFD826500BA"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "lbgl.jsp"
+			(object Class "Category.jsp"
 			    quid       	"5EFD826E02CB"
 			    stereotype 	"boundary")
-			(object Class "xjxl_success.jsp"
+			(object Class "AdxSuccess.jsp"
 			    quid       	"5EFD828201BF"
 			    stereotype 	"boundary")
-			(object Class "xjxl_failure.jsp"
+			(object Class "AdxFailure.jsp"
 			    quid       	"5EFD829003C6"
 			    stereotype 	"boundary")
-			(object Class "xjxl_servlet.java"
+			(object Class "AdxServlet.java"
 			    quid       	"5EFD829D030C"
 			    stereotype 	"control")
 			(object Mechanism @53
@@ -1414,21 +1412,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::lbgl.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::Category.jsp"
 				    quidu      	"5EFD826E02CB"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$18"
 				    quid       	"5EFD82D202F6"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::xjxl_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::AdxSuccess.jsp"
 				    quidu      	"5EFD828201BF"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$19"
 				    quid       	"5EFD82D500B4"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::xjxl_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::AdxFailure.jsp"
 				    quidu      	"5EFD829003C6"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -1479,7 +1477,7 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::xjxl_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::新建小类::AdxServlet.java"
 				    quidu      	"5EFD829D030C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -1495,7 +1493,7 @@
 					    quid       	"5EFD83A9028B"
 					    supplier   	"$UNNAMED$19"
 					    quidu      	"5EFD82D500B4"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::lbxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Genre.java"
 				    quidu      	"5EFD4EB701D6"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -1593,7 +1591,7 @@
 					y_coord    	98
 					Nested     	TRUE))
 				(object InterObjView "$UNNAMED$18" @59
-				    location   	(1072, 256)
+				    location   	(1072, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1605,7 +1603,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@59
-					location   	(1072, 280)
+					location   	(1072, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	687
@@ -1617,7 +1615,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD82D202F6"
 				    width      	229
-				    height     	868
+				    height     	900
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1630,7 +1628,7 @@
 					y_coord    	0
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$19" @61
-				    location   	(1488, 256)
+				    location   	(1488, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1642,7 +1640,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@61
-					location   	(1488, 280)
+					location   	(1488, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	687
@@ -1654,7 +1652,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD82D500B4"
 				    width      	229
-				    height     	868
+				    height     	900
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -1667,7 +1665,7 @@
 					y_coord    	0
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$17" @63
-				    location   	(1936, 272)
+				    location   	(1936, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1679,7 +1677,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@63
-					location   	(1936, 295)
+					location   	(1936, 247)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	471
@@ -1691,7 +1689,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD82D701EB"
 				    width      	157
-				    height     	852
+				    height     	900
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -1704,7 +1702,7 @@
 					y_coord    	317
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$20" @65
-				    location   	(2368, 272)
+				    location   	(2368, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -1716,7 +1714,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@65
-					location   	(2368, 296)
+					location   	(2368, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	462
@@ -1728,7 +1726,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD82E70265"
 				    width      	154
-				    height     	852
+				    height     	900
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -1984,16 +1982,16 @@
 		    quid       	"5EFD84F100FD"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "lbgl.jsp"
+			(object Class "Category.jsp"
 			    quid       	"5EFD84F80015"
 			    stereotype 	"boundary")
-			(object Class "sclb_success.jsp"
+			(object Class "DeleteSuccess.jsp"
 			    quid       	"5EFD8504027A"
 			    stereotype 	"boundary")
-			(object Class "sclb_failure.jsp"
+			(object Class "DeleteFailure.jsp"
 			    quid       	"5EFD851000B8"
 			    stereotype 	"boundary")
-			(object Class "sclb_servlet.java"
+			(object Class "DeleteServlet.java"
 			    quid       	"5EFD852002F0"
 			    stereotype 	"control")
 			(object Mechanism @79
@@ -2039,21 +2037,21 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::lbgl.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::Category.jsp"
 				    quidu      	"5EFD84F80015"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$24"
 				    quid       	"5EFD855902DF"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::sclb_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::DeleteSuccess.jsp"
 				    quidu      	"5EFD8504027A"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$25"
 				    quid       	"5EFD855C0052"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::sclb_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::DeleteFailure.jsp"
 				    quidu      	"5EFD851000B8"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -2104,7 +2102,7 @@
 						    ordinal    	4
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::sclb_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::类别管理::删除类别::DeleteServlet.java"
 				    quidu      	"5EFD852002F0"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -2120,7 +2118,7 @@
 					    quid       	"5EFD85A602F0"
 					    supplier   	"$UNNAMED$25"
 					    quidu      	"5EFD855C0052"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::lbxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Genre.java"
 				    quidu      	"5EFD4EB701D6"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -2563,23 +2561,23 @@
 	    quid       	"5EFD85DC0092"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object Class "nrbjj.jsp"
+		(object Class "Content.jsp"
 		    quid       	"5EFD881601FB"
 		    stereotype 	"boundary")
 		(object Class_Category "添加内容"
 		    quid       	"5EFD85E501D6"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "cxnr.jsp"
+			(object Class "Content.jsp"
 			    quid       	"5EFD860202D3"
 			    stereotype 	"boundary")
-			(object Class "tjnr_success.jsp"
+			(object Class "ASuccess.jsp"
 			    quid       	"5EFD861103C8"
 			    stereotype 	"boundary")
-			(object Class "tjnr_failure.jsp"
+			(object Class "AFailure.jsp"
 			    quid       	"5EFD861D0162"
 			    stereotype 	"boundary")
-			(object Class "tjnr_servlet.java"
+			(object Class "AServlet.java"
 			    quid       	"5EFD86280119"
 			    stereotype 	"control")
 			(object Mechanism @102
@@ -2635,21 +2633,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::cxnr.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::Content.jsp"
 				    quidu      	"5EFD860202D3"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$30"
 				    quid       	"5EFD865F02FA"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::tjnr_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::ASuccess.jsp"
 				    quidu      	"5EFD861103C8"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$31"
 				    quid       	"5EFD8662000D"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::tjnr_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::AFailure.jsp"
 				    quidu      	"5EFD861D0162"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -2700,7 +2698,7 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::tjnr_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::添加内容::AServlet.java"
 				    quidu      	"5EFD86280119"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -2716,7 +2714,7 @@
 					    quid       	"5EFD86C7011D"
 					    supplier   	"$UNNAMED$31"
 					    quidu      	"5EFD8662000D"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::nrxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Contentg.java"
 				    quidu      	"5EFD4E7E0075"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3205,13 +3203,13 @@
 		    quid       	"5EFD880A006E"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "cxnr_success.jsp"
+			(object Class "FindSuccess.jsp"
 			    quid       	"5EFD882E001F"
 			    stereotype 	"boundary")
-			(object Class "cxnr_failure.jsp"
+			(object Class "FindFailure.jsp"
 			    quid       	"5EFD883A0293"
 			    stereotype 	"boundary")
-			(object Class "cxnr_servlet.java"
+			(object Class "FindServlet.java"
 			    quid       	"5EFD884B03BF"
 			    stereotype 	"control")
 			(object Mechanism @128
@@ -3267,21 +3265,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::nrbjj.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::Content.jsp"
 				    quidu      	"5EFD881601FB"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$36"
 				    quid       	"5EFD888A01A4"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::查询内容::cxnr_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::查询内容::FindSuccess.jsp"
 				    quidu      	"5EFD882E001F"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$37"
 				    quid       	"5EFD888D008C"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::查询内容::cxnr_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::查询内容::FindFailure.jsp"
 				    quidu      	"5EFD883A0293"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3332,7 +3330,7 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::查询内容::cxnr_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::查询内容::FindServlet.java"
 				    quidu      	"5EFD884B03BF"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3348,7 +3346,7 @@
 					    quid       	"5EFD88F50369"
 					    supplier   	"$UNNAMED$37"
 					    quidu      	"5EFD888D008C"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::nrxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Contentg.java"
 				    quidu      	"5EFD4E7E0075"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3837,16 +3835,16 @@
 		    quid       	"5EFD8961032B"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "cxnr.jsp"
+			(object Class "Content.jsp"
 			    quid       	"5EFD89B8027E"
 			    stereotype 	"boundary")
-			(object Class "scnr_success.jsp"
+			(object Class "DSuccess.jsp"
 			    quid       	"5EFD8A36016D"
 			    stereotype 	"boundary")
-			(object Class "scnr_failure.jsp"
+			(object Class "DFailure.jsp"
 			    quid       	"5EFD8A4001A0"
 			    stereotype 	"boundary")
-			(object Class "scnr_servlet.java"
+			(object Class "DServlet.java"
 			    quid       	"5EFD8A4A0157"
 			    stereotype 	"control")
 			(object Mechanism @154
@@ -3892,21 +3890,21 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::cxnr.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::Content.jsp"
 				    quidu      	"5EFD89B8027E"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$42"
 				    quid       	"5EFD8A7800E1"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::scnr_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::DSuccess.jsp"
 				    quidu      	"5EFD8A36016D"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$43"
 				    quid       	"5EFD8A7A03B3"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::scnr_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::DFailure.jsp"
 				    quidu      	"5EFD8A4001A0"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3957,7 +3955,7 @@
 						    ordinal    	4
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::scnr_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::内容编辑::删除内容::DServlet.java"
 				    quidu      	"5EFD8A4A0157"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -3973,7 +3971,7 @@
 					    quid       	"5EFD8F260081"
 					    supplier   	"$UNNAMED$43"
 					    quidu      	"5EFD8A7A03B3"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::nrxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Contentg.java"
 				    quidu      	"5EFD4E7E0075"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -4416,20 +4414,20 @@
 	    quid       	"5EFD8F410146"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object Class "pdbj.jsp"
+		(object Class "FindBa.jsp"
 		    quid       	"5EFD8F79007F"
 		    stereotype 	"boundary")
 		(object Class_Category "查询"
 		    quid       	"5EFD8F73032C"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "cx_success.jsp"
+			(object Class "FSuccess.jsp"
 			    quid       	"5EFD8F83024C"
 			    stereotype 	"boundary")
-			(object Class "cx_failure.jsp"
+			(object Class "FFailure.jsp"
 			    quid       	"5EFD8F8D03AE"
 			    stereotype 	"boundary")
-			(object Class "cx_servlet.java"
+			(object Class "FServlet.java"
 			    quid       	"5EFD8F980221"
 			    stereotype 	"control")
 			(object Mechanism @177
@@ -4452,21 +4450,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::pdbj.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::FindBa.jsp"
 				    quidu      	"5EFD8F79007F"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$47"
 				    quid       	"5EFD8FD500D8"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::查询::cx_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::查询::FSuccess.jsp"
 				    quidu      	"5EFD8F83024C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$48"
 				    quid       	"5EFD8FD701DD"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::查询::cx_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::查询::FFailure.jsp"
 				    quidu      	"5EFD8F8D03AE"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -4517,7 +4515,7 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::查询::cx_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::查询::FServlet.java"
 				    quidu      	"5EFD8F980221"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -4533,7 +4531,7 @@
 					    quid       	"5EFD90E50355"
 					    supplier   	"$UNNAMED$48"
 					    quidu      	"5EFD8FD701DD"))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java"
 				    quidu      	"5EFD4ED701B4"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -4566,7 +4564,7 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::zyadmin.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::ZyAdmin.java"
 				    quidu      	"5EFD4EF701D1"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -4664,7 +4662,7 @@
 					y_coord    	98
 					Nested     	TRUE))
 				(object InterObjView "$UNNAMED$47" @183
-				    location   	(1008, 256)
+				    location   	(1008, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -4676,7 +4674,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@183
-					location   	(1008, 280)
+					location   	(1008, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	687
@@ -4688,7 +4686,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD8FD500D8"
 				    width      	229
-				    height     	868
+				    height     	900
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4701,7 +4699,7 @@
 					y_coord    	0
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$48" @185
-				    location   	(1440, 256)
+				    location   	(1440, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -4713,7 +4711,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@185
-					location   	(1440, 280)
+					location   	(1440, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	687
@@ -4725,7 +4723,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD8FD701DD"
 				    width      	229
-				    height     	868
+				    height     	900
 				    icon_height 	153
 				    icon_width 	229
 				    icon_y_offset 	0
@@ -4738,7 +4736,7 @@
 					y_coord    	0
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$46" @187
-				    location   	(1872, 240)
+				    location   	(1872, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -4750,7 +4748,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@187
-					location   	(1872, 263)
+					location   	(1872, 247)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	471
@@ -4762,7 +4760,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD8FDA0120"
 				    width      	157
-				    height     	884
+				    height     	900
 				    icon_height 	164
 				    icon_width 	157
 				    icon_y_offset 	0
@@ -4775,7 +4773,7 @@
 					y_coord    	317
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$49" @189
-				    location   	(2288, 256)
+				    location   	(2288, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -4787,7 +4785,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@189
-					location   	(2288, 280)
+					location   	(2288, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	462
@@ -4799,7 +4797,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD8FE30094"
 				    width      	154
-				    height     	868
+				    height     	900
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -5055,16 +5053,16 @@
 		    quid       	"5EFD92A50158"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "pdbj.jsp"
+			(object Class "FindBa.jsp"
 			    quid       	"5EFD92B0008E"
 			    stereotype 	"boundary")
-			(object Class "qc_success.jsp"
+			(object Class "DeSuccess.jsp"
 			    quid       	"5EFD92BA000C"
 			    stereotype 	"boundary")
-			(object Class "qc_failure.jsp"
+			(object Class "DeFailure.jsp"
 			    quid       	"5EFD92CA0091"
 			    stereotype 	"boundary")
-			(object Class "qc_servlet.java"
+			(object Class "DeServlet.java"
 			    quid       	"5EFD92D403E7"
 			    stereotype 	"control")
 			(object Mechanism @203
@@ -5097,7 +5095,7 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::zyadmin.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::ZyAdmin.java"
 				    quidu      	"5EFD4EF701D1"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5120,21 +5118,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::pdbj.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::FindBa.jsp"
 				    quidu      	"5EFD92B0008E"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$54"
 				    quid       	"5EFD92FA039C"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::qc_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::DeSuccess.jsp"
 				    quidu      	"5EFD92BA000C"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$55"
 				    quid       	"5EFD92FF02C4"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::qc_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::DeFailure.jsp"
 				    quidu      	"5EFD92CA0091"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5185,14 +5183,14 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::qc_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::清除::DeServlet.java"
 				    quidu      	"5EFD92D403E7"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$56"
 				    quid       	"5EFD93070036"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java"
 				    quidu      	"5EFD4ED701B4"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5681,16 +5679,16 @@
 		    quid       	"5EFD94A302F8"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "pdbj.jsp"
+			(object Class "FindBa.jsp"
 			    quid       	"5EFD94AE0321"
 			    stereotype 	"boundary")
-			(object Class "szqx_success.jsp"
+			(object Class "SetSuccess.jsp"
 			    quid       	"5EFD94C3039E"
 			    stereotype 	"boundary")
-			(object Class "szqx_failure.jsp"
+			(object Class "SetFailure.jsp"
 			    quid       	"5EFD94CD03AD"
 			    stereotype 	"boundary")
-			(object Class "szqx_servlet.java"
+			(object Class "SetServlet.java"
 			    quid       	"5EFD957B031F"
 			    stereotype 	"control")
 			(object Mechanism @229
@@ -5713,7 +5711,7 @@
 						    ordinal    	0
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::zyadmin.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::ZyAdmin.java"
 				    quidu      	"5EFD4EF701D1"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5736,21 +5734,21 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::pdbj.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::FindBa.jsp"
 				    quidu      	"5EFD94AE0321"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$60"
 				    quid       	"5EFD959C0106"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::szqx_success.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::SetSuccess.jsp"
 				    quidu      	"5EFD94C3039E"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$61"
 				    quid       	"5EFD959E021C"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::szqx_failure.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::SetFailure.jsp"
 				    quidu      	"5EFD94CD03AD"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5801,14 +5799,14 @@
 						    ordinal    	4
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::szqx_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道编辑权限设置::设置权限::SetServlet.java"
 				    quidu      	"5EFD957B031F"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$62"
 				    quid       	"5EFD95A60026"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java"
 				    quidu      	"5EFD4ED701B4"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -5825,7 +5823,7 @@
 			    origin_y   	0
 			    items      	(list diagram_item_list
 				(object InterObjView "$UNNAMED$57" @230
-				    location   	(240, 240)
+				    location   	(240, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -5837,7 +5835,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@230
-					location   	(240, 264)
+					location   	(240, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	462
@@ -5849,7 +5847,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD95960118"
 				    width      	154
-				    height     	760
+				    height     	776
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -6251,20 +6249,20 @@
 	    quid       	"5EFD967401E3"
 	    exportControl 	"Public"
 	    logical_models 	(list unit_reference_list
-		(object Class "pdfw.jsp"
+		(object Class "Findfw.jsp"
 		    quid       	"5EFE7998031D"
 		    stereotype 	"boundary")
 		(object Class_Category "查询"
 		    quid       	"5EFD9681021B"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "cd_success1.jsp"
+			(object Class "FiSuccess.jsp"
 			    quid       	"5EFE79BE03DA"
 			    stereotype 	"boundary")
-			(object Class "cx_failure1.jsp"
+			(object Class "FiFailure.jsp"
 			    quid       	"5EFE79CB00C7"
 			    stereotype 	"boundary")
-			(object Class "cx_servlet.java"
+			(object Class "FiServlet.java"
 			    quid       	"5EFE79D6032F"
 			    stereotype 	"control")
 			(object Mechanism @252
@@ -6297,14 +6295,14 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::zyadmin.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::ZyAdmin.java"
 				    quidu      	"5EFD4EF701D1"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$65"
 				    quid       	"5EFD96940342"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java"
 				    quidu      	"5EFD4ED701B4"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -6327,21 +6325,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::pdfw.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::Findfw.jsp"
 				    quidu      	"5EFE7998031D"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$67"
 				    quid       	"5EFE79F102E0"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::查询::cd_success1.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::查询::FiSuccess.jsp"
 				    quidu      	"5EFE79BE03DA"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$68"
 				    quid       	"5EFE79F40039"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::查询::cx_failure1.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::查询::FiFailure.jsp"
 				    quidu      	"5EFE79CB00C7"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -6392,7 +6390,7 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::查询::cx_servlet.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::查询::FiServlet.java"
 				    quidu      	"5EFE79D6032F"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -6608,7 +6606,7 @@
 					y_coord    	-3
 					Nested     	FALSE))
 				(object InterObjView "$UNNAMED$65" @265
-				    location   	(2288, 256)
+				    location   	(2288, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -6620,7 +6618,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@265
-					location   	(2288, 280)
+					location   	(2288, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	462
@@ -6632,7 +6630,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD96940342"
 				    width      	154
-				    height     	820
+				    height     	852
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -6888,13 +6886,13 @@
 		    quid       	"5EFD96AC0078"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "qc_success1.jsp"
+			(object Class "DelSuccess.jsp"
 			    quid       	"5EFE7A6601B2"
 			    stereotype 	"boundary")
-			(object Class "qc_failure1.jsp"
+			(object Class "DelFailure.jsp"
 			    quid       	"5EFE7A6F038D"
 			    stereotype 	"boundary")
-			(object Class "qc_servlet1.java"
+			(object Class "DelServlet.java"
 			    quid       	"5EFE7A7702A6"
 			    stereotype 	"boundary")
 			(object Mechanism @279
@@ -6927,14 +6925,14 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::zyadmin.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::ZyAdmin.java"
 				    quidu      	"5EFD4EF701D1"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$71"
 				    quid       	"5EFD96C3001B"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java"
 				    quidu      	"5EFD4ED701B4"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -6957,21 +6955,21 @@
 						    ordinal    	2
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::pdfw.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::Findfw.jsp"
 				    quidu      	"5EFE7998031D"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$73"
 				    quid       	"5EFE7A97014E"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::清除::qc_success1.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::清除::DelSuccess.jsp"
 				    quidu      	"5EFE7A6601B2"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$74"
 				    quid       	"5EFE7A99020D"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::清除::qc_failure1.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::清除::DelFailure.jsp"
 				    quidu      	"5EFE7A6F038D"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -7022,7 +7020,7 @@
 						    ordinal    	5
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::清除::qc_servlet1.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::清除::DelServlet.java"
 				    quidu      	"5EFE7A7702A6"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -7511,13 +7509,13 @@
 		    quid       	"5EFD96C90146"
 		    exportControl 	"Public"
 		    logical_models 	(list unit_reference_list
-			(object Class "szqx_success1.jsp"
+			(object Class "SeSuccess.jsp"
 			    quid       	"5EFE7B150336"
 			    stereotype 	"boundary")
-			(object Class "szqx_failure1.jsp"
+			(object Class "SeFailure.jsp"
 			    quid       	"5EFE7B210262"
 			    stereotype 	"boundary")
-			(object Class "szqx_servlet1.java"
+			(object Class "SeServlet.java"
 			    quid       	"5EFE7B2C00CC"
 			    stereotype 	"control")
 			(object Mechanism @305
@@ -7540,14 +7538,14 @@
 						    ordinal    	0
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::zyadmin.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::ZyAdmin.java"
 				    quidu      	"5EFD4EF701D1"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$77"
 				    quid       	"5EFD96FC00B6"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java"
 				    quidu      	"5EFD4ED701B4"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -7570,21 +7568,21 @@
 						    ordinal    	1
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::pdfw.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::Findfw.jsp"
 				    quidu      	"5EFE7998031D"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$79"
 				    quid       	"5EFE7B470089"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::设置权限::szqx_success1.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::设置权限::SeSuccess.jsp"
 				    quidu      	"5EFE7B150336"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
 				    multi      	FALSE)
 				(object Object "$UNNAMED$80"
 				    quid       	"5EFE7B490127"
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::设置权限::szqx_failure1.jsp"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::设置权限::SeFailure.jsp"
 				    quidu      	"5EFE7B210262"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -7635,7 +7633,7 @@
 						    ordinal    	4
 						    quidu      	"000000000000"
 						    creation   	FALSE))))
-				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::设置权限::szqx_servlet1.java"
+				    class      	"Logical View::Design Model::Use-Case Realizations::内容管理::频道范围权限设置::设置权限::SeServlet.java"
 				    quidu      	"5EFE7B2C00CC"
 				    persistence 	"Transient"
 				    creationObj 	FALSE
@@ -7652,7 +7650,7 @@
 			    origin_y   	0
 			    items      	(list diagram_item_list
 				(object InterObjView "$UNNAMED$75" @306
-				    location   	(240, 240)
+				    location   	(240, 224)
 				    font       	(object Font
 					size       	9
 					face       	"Arial"
@@ -7664,7 +7662,7 @@
 					default_color 	TRUE)
 				    label      	(object ItemLabel
 					Parent_View 	@306
-					location   	(240, 264)
+					location   	(240, 248)
 					anchor_loc 	1
 					nlines     	2
 					max_width  	462
@@ -7676,7 +7674,7 @@
 				    fill_color 	13434879
 				    quidu      	"5EFD96FC00A5"
 				    width      	154
-				    height     	744
+				    height     	760
 				    icon_height 	153
 				    icon_width 	154
 				    icon_y_offset 	0
@@ -8091,7 +8089,7 @@
 	    origin_x   	0
 	    origin_y   	0
 	    items      	(list diagram_item_list
-		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::nrxx.java" @329
+		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::Contentg.java" @329
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
@@ -8109,10 +8107,10 @@
 			Parent_View 	@329
 			location   	(384, 1068)
 			anchor_loc 	1
-			nlines     	2
+			nlines     	1
 			max_width  	469
 			justify    	0
-			label      	"nrxx.java")
+			label      	"Contentg.java")
 		    icon       	"entity"
 		    icon_style 	"Icon"
 		    line_color 	3342489
@@ -8121,7 +8119,7 @@
 		    height     	154
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::zyadmin.java" @330
+		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::ZyAdmin.java" @330
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
@@ -8142,7 +8140,7 @@
 			nlines     	2
 			max_width  	465
 			justify    	0
-			label      	"zyadmin.java")
+			label      	"ZyAdmin.java")
 		    icon       	"entity"
 		    icon_style 	"Icon"
 		    line_color 	3342489
@@ -8151,7 +8149,7 @@
 		    height     	154
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::pdxx.java" @331
+		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::Pin.java" @331
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
@@ -8172,7 +8170,7 @@
 			nlines     	2
 			max_width  	474
 			justify    	0
-			label      	"pdxx.java")
+			label      	"Pin.java")
 		    icon       	"entity"
 		    icon_style 	"Icon"
 		    line_color 	3342489
@@ -8181,7 +8179,7 @@
 		    height     	154
 		    annotation 	8
 		    autoResize 	TRUE)
-		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::lbxx.java" @332
+		(object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::内容管理::Genre.java" @332
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
@@ -8202,7 +8200,7 @@
 			nlines     	2
 			max_width  	472
 			justify    	0
-			label      	"lbxx.java")
+			label      	"Genre.java")
 		    icon       	"entity"
 		    icon_style 	"Icon"
 		    line_color 	3342489

@@ -91,6 +91,16 @@
 		    quid       	"5EFBE2BF0159")
 		(object ClassAttribute "状态"
 		    quid       	"5EFD3FA403C4")))
+	(object Class "资源管理员"
+	    quid       	"5EFED05C01D1"
+	    stereotype 	"entity"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号"
+		    quid       	"5EFED06A02BA")
+		(object ClassAttribute "用户名"
+		    quid       	"5EFED072012D")
+		(object ClassAttribute "密码"
+		    quid       	"5EFED0760096")))
 	(object Class_Category "类别管理"
 	    quid       	"5EFA8520012C"
 	    exportControl 	"Public"
@@ -7355,7 +7365,7 @@
 		    ShowCompartmentStereotypes 	TRUE
 		    IncludeAttribute 	TRUE
 		    IncludeOperation 	TRUE
-		    location   	(976, 688)
+		    location   	(1040, 800)
 		    font       	(object Font
 			size       	9
 			face       	"Arial"
@@ -7367,7 +7377,7 @@
 			default_color 	TRUE)
 		    label      	(object ItemLabel
 			Parent_View 	@312
-			location   	(976, 844)
+			location   	(1040, 956)
 			anchor_loc 	1
 			nlines     	2
 			max_width  	427
@@ -7448,6 +7458,36 @@
 		    client     	@314
 		    supplier   	@312
 		    vertices   	(list Points
-			(1796, 333)
-			(1050, 653))
-		    line_style 	0)))))
+			(1794, 344)
+			(1114, 751))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::Analysis Model::内容管理::资源管理员" @316
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(736, 208)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@316
+			location   	(736, 364)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	469
+			justify    	0
+			label      	"资源管理员")
+		    icon       	"entity"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EFED05C01D1"
+		    height     	154
+		    annotation 	8
+		    autoResize 	TRUE)))))
