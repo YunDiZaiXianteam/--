@@ -13,12 +13,132 @@
 	(object Class_Category "华迪培训"
 	    quid       	"5EFD2E730152"
 	    exportControl 	"Public"
-	    logical_models 	(list unit_reference_list)
+	    logical_models 	(list unit_reference_list
+		(object Class_Category "编辑培训计划"
+		    quid       	"5F02D42F02CD"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "查询培训计划"
+		    quid       	"5F02D44600C4"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "评论培训计划"
+		    quid       	"5F02D4540349"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "启用培训计划"
+		    quid       	"5F02D4670382"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "删除培训计划"
+		    quid       	"5F02D47702C2"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "停用培训计划"
+		    quid       	"5F02D48600CE"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "显示全部培训计划"
+		    quid       	"5F02D4950209"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "新增培训计划"
+		    quid       	"5F02D4A602E3"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "重置培训计划"
+		    quid       	"5F02D4B301AA"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list)))
 	    logical_presentations 	(list unit_reference_list))
 	(object Class_Category "计划管理"
 	    quid       	"5EFD2E8202B2"
 	    exportControl 	"Public"
-	    logical_models 	(list unit_reference_list)
+	    logical_models 	(list unit_reference_list
+		(object Class "计划信息"
+		    quid       	"5F03DA3A0386"
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "plan_kind"
+			    quid       	"5F03E0CB03DB"
+			    type       	"String")
+			(object ClassAttribute "plan_name"
+			    quid       	"5F03E0D9025E"
+			    type       	"String")
+			(object ClassAttribute "count"
+			    quid       	"5F03E0E300F1"
+			    type       	"Integer")
+			(object ClassAttribute "opentime"
+			    quid       	"5F03E0EA034C"
+			    type       	"Date")
+			(object ClassAttribute "endtime"
+			    quid       	"5F03E0F303C2"
+			    type       	"Date")
+			(object ClassAttribute "enablestate"
+			    quid       	"5F03E0FB03BE"
+			    type       	"String")
+			(object ClassAttribute "publicstate"
+			    quid       	"5F03E10C0042"
+			    type       	"String")
+			(object ClassAttribute "founder"
+			    quid       	"5F03E115031E"
+			    type       	"String")
+			(object ClassAttribute "sortvalue"
+			    quid       	"5F03E11B00CD"
+			    type       	"String")))
+		(object Class_Category "编辑计划"
+		    quid       	"5F02D4DB02A1"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "查询计划"
+		    quid       	"5F02D4E8032A"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "评论计划"
+		    quid       	"5F02D4F4021F"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "启用计划"
+		    quid       	"5F02D4FF029B"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "删除计划"
+		    quid       	"5F02D50F01EC"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "停用计划"
+		    quid       	"5F02D51901F3"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "显示全部计划"
+		    quid       	"5F02D52A02D7"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "新增计划"
+		    quid       	"5F02D53F0064"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "重置计划"
+		    quid       	"5F02D54B01A5"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list)))
 	    logical_presentations 	(list unit_reference_list))
 	(object Class_Category "公开课管理"
 	    quid       	"5EFD9640031B"
@@ -48,14 +168,27 @@
 			    opExportControl 	"Public"
 			    uid        	0))
 		    class_attributes 	(list class_attribute_list
-			(object ClassAttribute "class_id"
-			    quid       	"5EFD9BBD0281")
-			(object ClassAttribute "class_name"
-			    quid       	"5EFE88E400F6")
+			(object ClassAttribute "openclass_name"
+			    quid       	"5EFE88E400F6"
+			    type       	"String")
 			(object ClassAttribute "classkind"
-			    quid       	"5EFE89420107")
+			    quid       	"5EFE89420107"
+			    type       	"String")
+			(object ClassAttribute "credit"
+			    quid       	"5F03E2400370"
+			    type       	"float")
+			(object ClassAttribute "classhours"
+			    quid       	"5F03E24801CB"
+			    type       	"Integer")
+			(object ClassAttribute "exam"
+			    quid       	"5F03E2580090"
+			    type       	"String")
 			(object ClassAttribute "author"
-			    quid       	"5EFE894D0275")))
+			    quid       	"5EFE894D0275"
+			    type       	"String")
+			(object ClassAttribute "updatetime"
+			    quid       	"5F03E26101E2"
+			    type       	"Date")))
 		(object Class "公开课信息"
 		    quid       	"5EFD2EF103B9"
 		    used_nodes 	(list uses_relationship_list
@@ -97,20 +230,56 @@
 			    opExportControl 	"Public"
 			    uid        	0))
 		    class_attributes 	(list class_attribute_list
-			(object ClassAttribute "openclass_id"
-			    quid       	"5EFD82F10287")
 			(object ClassAttribute "openclass_name"
 			    quid       	"5EFD82F70283")
 			(object ClassAttribute "classkind"
 			    quid       	"5EFD83EA01C6")
+			(object ClassAttribute "credit"
+			    quid       	"5F02851A01C2")
+			(object ClassAttribute "classhours"
+			    quid       	"5F02854B00F7")
+			(object ClassAttribute "state"
+			    quid       	"5F0285A9031F")
+			(object ClassAttribute "exam"
+			    quid       	"5F0285B90184")
 			(object ClassAttribute "author"
 			    quid       	"5EFD83FA0145")
 			(object ClassAttribute "uploader"
 			    quid       	"5EFD8426019D")
-			(object ClassAttribute "cover"
-			    quid       	"5EFD842E02C0")))
+			(object ClassAttribute "updatetime"
+			    quid       	"5F0285E20213")))
 		(object Class "浏览器"
 		    quid       	"5EFE8F38000A")
+		(object Class "学员关注的课程"
+		    quid       	"5F03E2C4038C"
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "student_name"
+			    quid       	"5F03E2FF002B"
+			    type       	"String")
+			(object ClassAttribute "openclass_name"
+			    quid       	"5F03E309030F"
+			    type       	"String")))
+		(object Class "学员个人信息"
+		    quid       	"5F03E2DC024D"
+		    class_attributes 	(list class_attribute_list
+			(object ClassAttribute "student_name"
+			    quid       	"5F03E3320291"
+			    type       	"String")
+			(object ClassAttribute "student_id"
+			    quid       	"5F03E33B03E2"
+			    type       	"String")
+			(object ClassAttribute "student_pwd"
+			    quid       	"5F03E345008E"
+			    type       	"String")
+			(object ClassAttribute "student_sex"
+			    quid       	"5F03E352002F"
+			    type       	"String")
+			(object ClassAttribute "student_age"
+			    quid       	"5F03E35E01CB"
+			    type       	"Integer")
+			(object ClassAttribute "student_unit"
+			    quid       	"5F03E3680050"
+			    type       	"String")))
 		(object Class_Category "公开课选择"
 		    quid       	"5EFD976401F0"
 		    exportControl 	"Public"
@@ -124,6 +293,9 @@
 			(object UseCase "公开课选择"
 			    quid       	"5EFE98F300BA"
 			    stereotype 	"use-case realization"
+			    external_docs 	(list external_doc_list
+				(object external_doc
+				    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\公开课选择.doc"))
 			    realized_interfaces 	(list realize_rel_list
 				(object Realize_Relationship
 				    quid       	"5EFE992403D2"
@@ -344,7 +516,7 @@
 					    ShowCompartmentStereotypes 	TRUE
 					    IncludeAttribute 	TRUE
 					    IncludeOperation 	TRUE
-					    location   	(320, 1072)
+					    location   	(352, 1232)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -356,7 +528,7 @@
 						default_color 	TRUE)
 					    label      	(object ItemLabel
 						Parent_View 	@4
-						location   	(148, 715)
+						location   	(180, 805)
 						fill_color 	13434879
 						nlines     	1
 						max_width  	344
@@ -367,7 +539,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2EF103B9"
 					    width      	362
-					    height     	736
+					    height     	876
 					    annotation 	8
 					    autoResize 	TRUE)
 					(object ClassView "Class" "Logical View::Analysis Model::培训管理::公开课管理::我的课程信息" @5
@@ -386,18 +558,18 @@
 						default_color 	TRUE)
 					    label      	(object ItemLabel
 						Parent_View 	@5
-						location   	(877, 961)
+						location   	(774, 890)
 						fill_color 	13434879
 						nlines     	1
-						max_width  	262
+						max_width  	468
 						justify    	0
 						label      	"我的课程信息")
 					    icon_style 	"Icon"
 					    line_color 	3342489
 					    fill_color 	13434879
 					    quidu      	"5EFD990601AB"
-					    width      	280
-					    height     	500
+					    width      	486
+					    height     	642
 					    annotation 	8
 					    autoResize 	TRUE)))
 				(object InteractionDiagram "选择公开课"
@@ -975,6 +1147,9 @@
 				(object UseCase "公开课展示"
 				    quid       	"5EFE9A0600DB"
 				    stereotype 	"use-case realization"
+				    external_docs 	(list external_doc_list
+					(object external_doc
+					    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\公开课展示页面.doc"))
 				    realized_interfaces 	(list realize_rel_list
 					(object Realize_Relationship
 					    quid       	"5EFE9A2C019F"
@@ -1596,6 +1771,9 @@
 				(object UseCase "模糊查询"
 				    quid       	"5EFE9A6A01B8"
 				    stereotype 	"use-case realization"
+				    external_docs 	(list external_doc_list
+					(object external_doc
+					    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\模糊查询.doc"))
 				    realized_interfaces 	(list realize_rel_list
 					(object Realize_Relationship
 					    quid       	"5EFE9A98008A"
@@ -2292,6 +2470,9 @@
 				(object UseCase "分类查询"
 				    quid       	"5EFE997D0390"
 				    stereotype 	"use-case realization"
+				    external_docs 	(list external_doc_list
+					(object external_doc
+					    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\分类查询.doc"))
 				    realized_interfaces 	(list realize_rel_list
 					(object Realize_Relationship
 					    quid       	"5EFE99AD001C"
@@ -2942,6 +3123,9 @@
 			(object UseCase "课程详细信息"
 			    quid       	"5EFE9AEA0398"
 			    stereotype 	"use-case realization"
+			    external_docs 	(list external_doc_list
+				(object external_doc
+				    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\课程详细信息.doc"))
 			    realized_interfaces 	(list realize_rel_list
 				(object Realize_Relationship
 				    quid       	"5EFE9B0600E0"
@@ -3144,7 +3328,7 @@
 						default_color 	TRUE)
 					    label      	(object ItemLabel
 						Parent_View 	@123
-						location   	(324, 571)
+						location   	(324, 501)
 						fill_color 	13434879
 						nlines     	1
 						max_width  	344
@@ -3155,7 +3339,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD2EF103B9"
 					    width      	362
-					    height     	736
+					    height     	876
 					    annotation 	8
 					    autoResize 	TRUE)))
 				(object InteractionDiagram "课程详细信息"
@@ -3598,6 +3782,9 @@
 			(object UseCase "我的课程"
 			    quid       	"5EFE9B3F0219"
 			    stereotype 	"use-case realization"
+			    external_docs 	(list external_doc_list
+				(object external_doc
+				    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\我的课程.doc"))
 			    realized_interfaces 	(list realize_rel_list
 				(object Realize_Relationship
 				    quid       	"5EFE9B5E021F"
@@ -3804,7 +3991,7 @@
 						default_color 	TRUE)
 					    label      	(object ItemLabel
 						Parent_View 	@152
-						location   	(157, 849)
+						location   	(157, 872)
 						fill_color 	13434879
 						nlines     	1
 						max_width  	262
@@ -3815,7 +4002,7 @@
 					    fill_color 	13434879
 					    quidu      	"5EFD990601AB"
 					    width      	280
-					    height     	500
+					    height     	454
 					    annotation 	8
 					    autoResize 	TRUE)))
 				(object InteractionDiagram "我的课程"
@@ -4262,6 +4449,9 @@
 				(object UseCase "添加公开课"
 				    quid       	"5EFE982C03AB"
 				    stereotype 	"use-case realization"
+				    external_docs 	(list external_doc_list
+					(object external_doc
+					    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\添加公开课.doc"))
 				    realized_interfaces 	(list realize_rel_list
 					(object Realize_Relationship
 					    quid       	"5EFE98400212"
@@ -4485,7 +4675,7 @@
 							default_color 	TRUE)
 						    label      	(object ItemLabel
 							Parent_View 	@181
-							location   	(2260, 395)
+							location   	(2260, 325)
 							fill_color 	13434879
 							nlines     	1
 							max_width  	344
@@ -4496,7 +4686,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD2EF103B9"
 						    width      	362
-						    height     	736
+						    height     	876
 						    annotation 	8
 						    autoResize 	TRUE)))
 					(object InteractionDiagram "添加公开课"
@@ -5027,6 +5217,9 @@
 				(object UseCase "将公开课设置为可见"
 				    quid       	"5EFE95EE0321"
 				    stereotype 	"use-case realization"
+				    external_docs 	(list external_doc_list
+					(object external_doc
+					    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\将公开课设置为可见.doc"))
 				    realized_interfaces 	(list realize_rel_list
 					(object Realize_Relationship
 					    quid       	"5EFE96750137"
@@ -5164,7 +5357,7 @@
 						    ShowCompartmentStereotypes 	TRUE
 						    IncludeAttribute 	TRUE
 						    IncludeOperation 	TRUE
-						    location   	(608, 624)
+						    location   	(640, 1008)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -5176,7 +5369,7 @@
 							default_color 	TRUE)
 						    label      	(object ItemLabel
 							Parent_View 	@213
-							location   	(435, 596)
+							location   	(467, 980)
 							fill_color 	13434879
 							nlines     	1
 							max_width  	346
@@ -5184,7 +5377,7 @@
 							label      	"公开课设置边界类")
 						    stereotype 	(object ItemLabel
 							Parent_View 	@213
-							location   	(435, 549)
+							location   	(467, 933)
 							fill_color 	13434879
 							anchor     	10
 							nlines     	1
@@ -5204,7 +5397,7 @@
 						    ShowCompartmentStereotypes 	TRUE
 						    IncludeAttribute 	TRUE
 						    IncludeOperation 	TRUE
-						    location   	(1296, 608)
+						    location   	(608, 656)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -5216,7 +5409,7 @@
 							default_color 	TRUE)
 						    label      	(object ItemLabel
 							Parent_View 	@214
-							location   	(1123, 580)
+							location   	(435, 628)
 							fill_color 	13434879
 							nlines     	1
 							max_width  	346
@@ -5224,7 +5417,7 @@
 							label      	"公开课设置控制类")
 						    stereotype 	(object ItemLabel
 							Parent_View 	@214
-							location   	(1123, 533)
+							location   	(435, 581)
 							fill_color 	13434879
 							anchor     	10
 							nlines     	1
@@ -5244,7 +5437,7 @@
 						    ShowCompartmentStereotypes 	TRUE
 						    IncludeAttribute 	TRUE
 						    IncludeOperation 	TRUE
-						    location   	(1184, 1168)
+						    location   	(1200, 880)
 						    font       	(object Font
 							size       	9
 							face       	"Arial"
@@ -5256,7 +5449,7 @@
 							default_color 	TRUE)
 						    label      	(object ItemLabel
 							Parent_View 	@215
-							location   	(1012, 811)
+							location   	(1028, 453)
 							fill_color 	13434879
 							nlines     	1
 							max_width  	344
@@ -5267,7 +5460,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD2EF103B9"
 						    width      	362
-						    height     	736
+						    height     	876
 						    annotation 	8
 						    autoResize 	TRUE)))
 					(object InteractionDiagram "将公开课设置为可见"
@@ -5804,6 +5997,9 @@
 				(object UseCase "删除公开课"
 				    quid       	"5EFE976600A5"
 				    stereotype 	"use-case realization"
+				    external_docs 	(list external_doc_list
+					(object external_doc
+					    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\公开课管理\\删除公开课.doc"))
 				    realized_interfaces 	(list realize_rel_list
 					(object Realize_Relationship
 					    quid       	"5EFE97890208"
@@ -6033,7 +6229,7 @@
 							default_color 	TRUE)
 						    label      	(object ItemLabel
 							Parent_View 	@250
-							location   	(420, 795)
+							location   	(420, 725)
 							fill_color 	13434879
 							nlines     	1
 							max_width  	344
@@ -6044,7 +6240,7 @@
 						    fill_color 	13434879
 						    quidu      	"5EFD2EF103B9"
 						    width      	362
-						    height     	736
+						    height     	876
 						    annotation 	8
 						    autoResize 	TRUE)))
 					(object InteractionDiagram "删除公开课"
@@ -6567,678 +6763,7 @@
 					    vertices   	(list Points
 						(719, 1062)
 						(1330, 1027))
-					    line_style 	0)))))
-			(object Mechanism @282
-			    logical_models 	(list unit_reference_list
-				(object Object "$UNNAMED$37"
-				    quid       	"5EFD98D10254"
-				    collaborators 	(list link_list
-					(object Link
-					    quid       	"5EFD99A7005F"
-					    supplier   	"$UNNAMED$38"
-					    quidu      	"5EFD98D60214"
-					    messages   	(list Messages
-						(object Message "1.选择一门公开课"
-						    quid       	"5EFD99A70060"
-						    frequency  	"Aperiodic"
-						    synchronization 	"Simple"
-						    dir        	"FromClientToSupplier"
-						    sequence   	"1"
-						    ordinal    	0
-						    quidu      	"000000000000"
-						    creation   	FALSE))))
-				    class      	"Use Case View::Business Use-Case Model::Actors::普通学员"
-				    quidu      	"5EEDB2A30362"
-				    persistence 	"Transient"
-				    creationObj 	FALSE
-				    multi      	FALSE)
-				(object Object "$UNNAMED$38"
-				    quid       	"5EFD98D60214"
-				    collaborators 	(list link_list
-					(object Link
-					    quid       	"5EFD99C803D0"
-					    supplier   	"$UNNAMED$38"
-					    quidu      	"5EFD98D60214"
-					    messages   	(list Messages
-						(object Message "4.显示公开课的详细信息"
-						    quid       	"5EFD99C803D1"
-						    frequency  	"Aperiodic"
-						    synchronization 	"Simple"
-						    dir        	"FromClientToSupplier"
-						    sequence   	"2"
-						    ordinal    	3
-						    quidu      	"000000000000"
-						    creation   	FALSE)))
-					(object Link
-					    quid       	"5EFD9A11013D"
-					    supplier   	"$UNNAMED$39"
-					    quidu      	"5EFD98D901C7"
-					    messages   	(list Messages
-						(object Message "5.点击关注公开课"
-						    quid       	"5EFD9A11013E"
-						    frequency  	"Aperiodic"
-						    synchronization 	"Simple"
-						    dir        	"FromClientToSupplier"
-						    sequence   	"3"
-						    ordinal    	4
-						    quidu      	"000000000000"
-						    creation   	FALSE)))
-					(object Link
-					    quid       	"5EFD9B14037B"
-					    supplier   	"$UNNAMED$40"
-					    quidu      	"5EFD9AEB0138"
-					    messages   	(list Messages
-						(object Message "2.公开课详细信息"
-						    quid       	"5EFD9B14037C"
-						    frequency  	"Aperiodic"
-						    synchronization 	"Simple"
-						    dir        	"FromClientToSupplier"
-						    sequence   	"1.1"
-						    ordinal    	1
-						    quidu      	"000000000000"
-						    creation   	FALSE)
-						(object Message "3.展示公开课详细信息"
-						    quid       	"5EFD9B300196"
-						    frequency  	"Aperiodic"
-						    synchronization 	"Simple"
-						    dir        	"ToClientFromSupplier"
-						    sequence   	"1.1.1"
-						    ordinal    	2
-						    quidu      	"000000000000"
-						    creation   	FALSE))))
-				    class      	"Logical View::Analysis Model::培训管理::公开课管理::公开课选择::公开课选择边界类"
-				    quidu      	"5EFD988E007E"
-				    persistence 	"Transient"
-				    creationObj 	FALSE
-				    multi      	FALSE)
-				(object Object "$UNNAMED$39"
-				    quid       	"5EFD98D901C7"
-				    collaborators 	(list link_list
-					(object Link
-					    quid       	"5EFD9A9702DA"
-					    supplier   	"$UNNAMED$41"
-					    quidu      	"5EFD99A103E0"
-					    messages   	(list Messages
-						(object Message "6.关注的公开课添加保存到我的课程信息"
-						    quid       	"5EFD9A9702DB"
-						    frequency  	"Aperiodic"
-						    synchronization 	"Simple"
-						    dir        	"FromClientToSupplier"
-						    sequence   	"4"
-						    ordinal    	5
-						    quidu      	"000000000000"
-						    creation   	FALSE))))
-				    class      	"Logical View::Analysis Model::培训管理::公开课管理::公开课选择::公开课选择控制类"
-				    quidu      	"5EFD989F0080"
-				    persistence 	"Transient"
-				    creationObj 	FALSE
-				    multi      	FALSE)
-				(object Object "$UNNAMED$41"
-				    quid       	"5EFD99A103E0"
-				    collaborators 	(list link_list
-					(object Link
-					    quid       	"5EFD9AB9007D"
-					    supplier   	"$UNNAMED$38"
-					    quidu      	"5EFD98D60214"
-					    messages   	(list Messages
-						(object Message "7.关注成功"
-						    quid       	"5EFD9AB9007E"
-						    frequency  	"Aperiodic"
-						    synchronization 	"Simple"
-						    dir        	"FromClientToSupplier"
-						    sequence   	"5"
-						    ordinal    	6
-						    quidu      	"000000000000"
-						    creation   	FALSE))))
-				    quidu      	"5EFD9928024D"
-				    persistence 	"Transient"
-				    creationObj 	FALSE
-				    multi      	FALSE)
-				(object Object "$UNNAMED$40"
-				    quid       	"5EFD9AEB0138"
-				    quidu      	"5EFD87A802C2"
-				    persistence 	"Transient"
-				    creationObj 	FALSE
-				    multi      	FALSE))))
-		    logical_presentations 	(list unit_reference_list
-			(object InteractionDiagram "公开课设置"
-			    mechanism_ref 	@282
-			    quid       	"5EFD58170320"
-			    title      	"公开课设置"
-			    external_docs 	(list external_doc_list
-				(object external_doc
-				    external_doc_path 	"E:\\四川华迪实训\\云迪在线网络学习平台\\云迪用例模型\\公开课设置用例阐述.doc"))
-			    zoom       	100
-			    max_height 	28350
-			    max_width  	21600
-			    origin_x   	0
-			    origin_y   	0
-			    items      	(list diagram_item_list
-				(object InterObjView "$UNNAMED$37" @283
-				    location   	(176, 224)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	TRUE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object ItemLabel
-					Parent_View 	@283
-					location   	(176, 247)
-					anchor_loc 	1
-					nlines     	2
-					max_width  	360
-					justify    	0
-					label      	"")
-				    icon       	"Actor"
-				    icon_style 	"Icon"
-				    line_color 	3342489
-				    fill_color 	13434879
-				    quidu      	"5EFD98D10254"
-				    width      	120
-				    height     	1094
-				    icon_height 	162
-				    icon_width 	120
-				    icon_y_offset 	0
-				    annotation 	1
-				    Focus_Of_Control 	(object Focus_Of_Control "" @284
-					location   	(176, 368)
-					line_color 	3342489
-					InterObjView 	@283
-					height     	90
-					y_coord    	0
-					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$38" @285
-				    location   	(704, 224)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	TRUE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object ItemLabel
-					Parent_View 	@285
-					location   	(704, 248)
-					anchor_loc 	1
-					nlines     	2
-					max_width  	687
-					justify    	0
-					label      	"")
-				    icon       	"boundary"
-				    icon_style 	"Icon"
-				    line_color 	3342489
-				    fill_color 	13434879
-				    quidu      	"5EFD98D60214"
-				    width      	229
-				    height     	1094
-				    icon_height 	153
-				    icon_width 	229
-				    icon_y_offset 	0
-				    annotation 	1
-				    Focus_Of_Control 	(object Focus_Of_Control "" @286
-					location   	(704, 368)
-					line_color 	3342489
-					InterObjView 	@285
-					height     	268
-					y_coord    	178
-					Nested     	FALSE)
-				    Focus_Of_Control 	(object Focus_Of_Control "" @287
-					location   	(704, 576)
-					line_color 	3342489
-					InterObjView 	@285
-					height     	90
-					y_coord    	0
-					Nested     	TRUE)
-				    Focus_Of_Control 	(object Focus_Of_Control "" @288
-					location   	(704, 720)
-					line_color 	3342489
-					InterObjView 	@285
-					height     	92
-					y_coord    	2
-					Nested     	FALSE)
-				    Focus_Of_Control 	(object Focus_Of_Control "" @289
-					location   	(704, 752)
-					line_color 	3342489
-					InterObjView 	@285
-					height     	90
-					y_coord    	0
-					Nested     	TRUE)
-				    Focus_Of_Control 	(object Focus_Of_Control "" @290
-					location   	(704, 880)
-					line_color 	3342489
-					InterObjView 	@285
-					height     	92
-					y_coord    	2
-					Nested     	FALSE)
-				    Focus_Of_Control 	(object Focus_Of_Control "" @291
-					location   	(704, 1136)
-					line_color 	3342489
-					InterObjView 	@285
-					height     	90
-					y_coord    	0
-					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$40" @292
-				    location   	(1152, 225)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	TRUE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object ItemLabel
-					Parent_View 	@292
-					location   	(1152, 224)
-					fill_color 	13434879
-					anchor_loc 	1
-					nlines     	2
-					max_width  	282
-					justify    	0
-					label      	"")
-				    icon_style 	"Icon"
-				    line_color 	3342489
-				    fill_color 	13434879
-				    quidu      	"5EFD9AEB0138"
-				    width      	300
-				    height     	1093
-				    icon_height 	0
-				    icon_width 	0
-				    icon_y_offset 	0
-				    annotation 	1
-				    Focus_Of_Control 	(object Focus_Of_Control "" @293
-					location   	(1152, 480)
-					line_color 	3342489
-					InterObjView 	@292
-					height     	188
-					y_coord    	98
-					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$39" @294
-				    location   	(1616, 240)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	TRUE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object ItemLabel
-					Parent_View 	@294
-					location   	(1616, 263)
-					anchor_loc 	1
-					nlines     	2
-					max_width  	471
-					justify    	0
-					label      	"")
-				    icon       	"control"
-				    icon_style 	"Icon"
-				    line_color 	3342489
-				    fill_color 	13434879
-				    quidu      	"5EFD98D901C7"
-				    width      	157
-				    height     	1078
-				    icon_height 	164
-				    icon_width 	157
-				    icon_y_offset 	0
-				    annotation 	1
-				    Focus_Of_Control 	(object Focus_Of_Control "" @295
-					location   	(1616, 880)
-					line_color 	3342489
-					InterObjView 	@294
-					height     	90
-					y_coord    	0
-					Nested     	FALSE)
-				    Focus_Of_Control 	(object Focus_Of_Control "" @296
-					location   	(1616, 1024)
-					line_color 	3342489
-					InterObjView 	@294
-					height     	92
-					y_coord    	2
-					Nested     	FALSE))
-				(object InterObjView "$UNNAMED$41" @297
-				    location   	(2080, 225)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	TRUE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object ItemLabel
-					Parent_View 	@297
-					location   	(2080, 224)
-					fill_color 	13434879
-					anchor_loc 	1
-					nlines     	2
-					max_width  	282
-					justify    	0
-					label      	"")
-				    icon_style 	"Icon"
-				    line_color 	3342489
-				    fill_color 	13434879
-				    quidu      	"5EFD99A103E0"
-				    width      	300
-				    height     	1093
-				    icon_height 	0
-				    icon_width 	0
-				    icon_y_offset 	0
-				    annotation 	1
-				    Focus_Of_Control 	(object Focus_Of_Control "" @298
-					location   	(2080, 1024)
-					line_color 	3342489
-					InterObjView 	@297
-					height     	90
-					y_coord    	0
-					Nested     	FALSE)
-				    Focus_Of_Control 	(object Focus_Of_Control "" @299
-					location   	(2080, 1136)
-					line_color 	3342489
-					InterObjView 	@297
-					height     	92
-					y_coord    	2
-					Nested     	FALSE))
-				(object InterMessView "1.选择一门公开课" @300
-				    location   	(16, 368)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object SegLabel @301
-					Parent_View 	@300
-					location   	(439, 324)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					quidu      	"5EFD99A70060"
-					anchor_loc 	1
-					nlines     	1
-					max_width  	312
-					justify    	0
-					label      	"1.选择一门公开课"
-					pctDist    	0.500000
-					height     	45
-					orientation 	0)
-				    line_color 	3342489
-				    client     	@283
-				    supplier   	@285
-				    Focus_Src  	@284
-				    Focus_Entry 	@286
-				    origin     	(191, 368)
-				    terminus   	(688, 368)
-				    ordinal    	0)
-				(object SelfMessView "4.显示公开课的详细信息" @302
-				    location   	(16, 720)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object SegLabel @303
-					Parent_View 	@302
-					location   	(795, 676)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					quidu      	"5EFD99C803D1"
-					anchor_loc 	1
-					nlines     	1
-					max_width  	416
-					justify    	0
-					label      	"4.显示公开课的详细信息"
-					pctDist    	0.500000
-					height     	45
-					orientation 	0)
-				    line_color 	3342489
-				    client     	@285
-				    supplier   	@285
-				    Focus_Src  	@288
-				    Focus_Entry 	@289
-				    origin     	(720, 720)
-				    terminus   	(870, 720)
-				    ordinal    	3)
-				(object InterMessView "5.点击关注公开课" @304
-				    location   	(16, 874)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object SegLabel @305
-					Parent_View 	@304
-					location   	(1159, 830)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					quidu      	"5EFD9A11013E"
-					anchor_loc 	1
-					nlines     	1
-					max_width  	304
-					justify    	0
-					label      	"5.点击关注公开课"
-					pctDist    	0.500000
-					height     	45
-					orientation 	0)
-				    line_color 	3342489
-				    client     	@285
-				    supplier   	@294
-				    Focus_Src  	@290
-				    Focus_Entry 	@295
-				    origin     	(719, 874)
-				    terminus   	(1600, 874)
-				    ordinal    	4)
-				(object InterMessView "6.关注的公开课添加保存到我的课程信息" @306
-				    location   	(16, 1018)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object SegLabel @307
-					Parent_View 	@306
-					location   	(1847, 974)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					quidu      	"5EFD9A9702DB"
-					anchor_loc 	1
-					nlines     	1
-					max_width  	679
-					justify    	0
-					label      	"6.关注的公开课添加保存到我的课程信息"
-					pctDist    	0.500000
-					height     	45
-					orientation 	0)
-				    line_color 	3342489
-				    client     	@294
-				    supplier   	@297
-				    Focus_Src  	@296
-				    Focus_Entry 	@298
-				    origin     	(1631, 1018)
-				    terminus   	(2064, 1018)
-				    ordinal    	5)
-				(object InterMessView "7.关注成功" @308
-				    location   	(16, 1130)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object SegLabel @309
-					Parent_View 	@308
-					location   	(1392, 1086)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					quidu      	"5EFD9AB9007E"
-					anchor_loc 	1
-					nlines     	1
-					max_width  	191
-					justify    	0
-					label      	"7.关注成功"
-					pctDist    	0.500000
-					height     	45
-					orientation 	1)
-				    line_color 	3342489
-				    client     	@297
-				    supplier   	@285
-				    Focus_Src  	@299
-				    Focus_Entry 	@291
-				    origin     	(2064, 1130)
-				    terminus   	(720, 1130)
-				    ordinal    	6)
-				(object InterMessView "2.公开课详细信息" @310
-				    location   	(16, 473)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object SegLabel @311
-					Parent_View 	@310
-					location   	(927, 429)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					quidu      	"5EFD9B14037C"
-					anchor_loc 	1
-					nlines     	1
-					max_width  	304
-					justify    	0
-					label      	"2.公开课详细信息"
-					pctDist    	0.500000
-					height     	45
-					orientation 	0)
-				    line_color 	3342489
-				    client     	@285
-				    supplier   	@292
-				    Focus_Src  	@286
-				    Focus_Entry 	@293
-				    origin     	(719, 473)
-				    terminus   	(1136, 473)
-				    ordinal    	1)
-				(object InterMessView "3.展示公开课详细信息" @312
-				    location   	(16, 578)
-				    font       	(object Font
-					size       	9
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    label      	(object SegLabel @313
-					Parent_View 	@312
-					location   	(928, 534)
-					font       	(object Font
-					    size       	9
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					quidu      	"5EFD9B300196"
-					anchor_loc 	1
-					nlines     	1
-					max_width  	384
-					justify    	0
-					label      	"3.展示公开课详细信息"
-					pctDist    	0.500000
-					height     	45
-					orientation 	1)
-				    line_color 	3342489
-				    client     	@292
-				    supplier   	@285
-				    Focus_Src  	@293
-				    Focus_Entry 	@287
-				    origin     	(1136, 578)
-				    terminus   	(720, 578)
-				    ordinal    	2))))))
-	    logical_presentations 	(list unit_reference_list))
-	(object Mechanism @314
-	    logical_models 	(list unit_reference_list)))
-    logical_presentations 	(list unit_reference_list
-	(object InteractionDiagram "培训管理"
-	    mechanism_ref 	@314
-	    quid       	"5EFD326A0322"
-	    title      	"培训管理"
-	    zoom       	100
-	    max_height 	28350
-	    max_width  	21600
-	    origin_x   	0
-	    origin_y   	0
-	    items      	(list diagram_item_list))))
+					    line_style 	0))))))
+		    logical_presentations 	(list unit_reference_list)))
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list))
